@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Sanibonani.ogg-0c288f9be1224eaa3d1163da993f3edc.oggstr"
+
+[deps]
+
+source_file="res://src/AudioManager/Audios/Greetings/Sanibonani.ogg"
+dest_files=[ "res://.import/Sanibonani.ogg-0c288f9be1224eaa3d1163da993f3edc.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

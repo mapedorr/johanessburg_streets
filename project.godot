@@ -1,0 +1,87 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Character",
+"language": "GDScript",
+"path": "res://src/Characters/Character.gd"
+}, {
+"base": "Path2D",
+"class": "Route",
+"language": "GDScript",
+"path": "res://src/Johannesburg/Route.gd"
+}, {
+"base": "Sprite",
+"class": "TrafficLight",
+"language": "GDScript",
+"path": "res://src/TrafficLight/TrafficLight.gd"
+} ]
+_global_script_class_icons={
+"Character": "",
+"Route": "",
+"TrafficLight": ""
+}
+
+[application]
+
+config/name="johannesburg_streets"
+run/main_scene="res://src/Main.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+AudioMgr="*res://src/AudioManager/AudioMgr.gd"
+E="*res://src/Singletons/EventManager.gd"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/size/test_width=1280
+window/size/test_height=720
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

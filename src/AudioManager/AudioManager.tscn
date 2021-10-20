@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://src/AudioManager/AudioManager.gd" type="Script" id=1]
+[ext_resource path="res://src/AudioManager/Audios/AmbientSoundAnimation.ogg" type="AudioStream" id=2]
+[ext_resource path="res://src/AudioManager/Audios/Effect.ogg" type="AudioStream" id=3]
+[ext_resource path="res://src/AudioManager/Audios/Greetings/Avuxeni.ogg" type="AudioStream" id=4]
+[ext_resource path="res://src/AudioManager/Audios/Greetings/Dumelang.ogg" type="AudioStream" id=5]
+[ext_resource path="res://src/AudioManager/Audios/Greetings/Dumela.ogg" type="AudioStream" id=6]
+[ext_resource path="res://src/AudioManager/Audios/Greetings/Minjhani.ogg" type="AudioStream" id=7]
+[ext_resource path="res://src/AudioManager/Audios/Greetings/Sanibonani.ogg" type="AudioStream" id=8]
+[ext_resource path="res://src/AudioManager/Audios/Greetings/Hola.ogg" type="AudioStream" id=9]
+[ext_resource path="res://src/AudioManager/Audios/Greetings/Hello.ogg" type="AudioStream" id=10]
+
+[node name="AudioManager" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="MX" type="Node2D" parent="."]
+
+[node name="Music" type="AudioStreamPlayer" parent="MX"]
+stream = ExtResource( 2 )
+volume_db = -15.0
+
+[node name="FX" type="Node2D" parent="."]
+
+[node name="Effecto" type="AudioStreamPlayer" parent="FX"]
+stream = ExtResource( 3 )
+
+[node name="VX" type="Node2D" parent="."]
+
+[node name="Voice1" type="AudioStreamPlayer" parent="VX"]
+stream = ExtResource( 4 )
+volume_db = 1.0
+
+[node name="Voice2" type="AudioStreamPlayer" parent="VX"]
+stream = ExtResource( 6 )
+volume_db = 1.0
+pitch_scale = 1.2
+
+[node name="Voice3" type="AudioStreamPlayer" parent="VX"]
+stream = ExtResource( 5 )
+volume_db = 1.0
+
+[node name="Voice4" type="AudioStreamPlayer" parent="VX"]
+stream = ExtResource( 10 )
+volume_db = 1.0
+
+[node name="Voice5" type="AudioStreamPlayer" parent="VX"]
+stream = ExtResource( 9 )
+volume_db = 1.0
+
+[node name="Voice6" type="AudioStreamPlayer" parent="VX"]
+stream = ExtResource( 7 )
+volume_db = 1.0
+
+[node name="Voice7" type="AudioStreamPlayer" parent="VX"]
+stream = ExtResource( 8 )
+volume_db = 1.0

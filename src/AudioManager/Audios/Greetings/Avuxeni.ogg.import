@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Avuxeni.ogg-ed87e9eb1f11293fa82ebfd55c610a2e.oggstr"
+
+[deps]
+
+source_file="res://src/AudioManager/Audios/Greetings/Avuxeni.ogg"
+dest_files=[ "res://.import/Avuxeni.ogg-ed87e9eb1f11293fa82ebfd55c610a2e.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
