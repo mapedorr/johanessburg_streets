@@ -1,16 +1,14 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
-# var a: int = 2
-# var b: String = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	Console.add_command('zoom_out', self).register()
+	Console.add_command('zoom_in', self).register()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-#	pass
+func zoom_out() -> void:
+	$Camera2D.zoom += Vector2.ONE * 0.5
+
+
+func zoom_in() -> void:
+	$Camera2D.zoom -= Vector2.ONE * 0.5

@@ -40,6 +40,7 @@ config/icon="res://icon.png"
 
 AudioMgr="*res://src/AudioManager/AudioMgr.gd"
 E="*res://src/Singletons/EventManager.gd"
+Console="*res://addons/quentincaffeino/console/src/Console.tscn"
 
 [display]
 
@@ -47,6 +48,10 @@ window/size/width=1920
 window/size/height=1080
 window/size/test_width=1280
 window/size/test_height=720
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/quentincaffeino/console/plugin.cfg" )
 
 [importer_defaults]
 
@@ -69,6 +74,29 @@ texture={
 "size_limit": 0,
 "stream": false,
 "svg/scale": 1.0
+}
+
+[input]
+
+quentincaffeino_console_toggle={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":true,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":67,"unicode":0,"echo":false,"script":null)
+ ]
+}
+quentincaffeino_console_autocomplete={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777218,"unicode":0,"echo":false,"script":null)
+ ]
+}
+quentincaffeino_console_history_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"unicode":0,"echo":false,"script":null)
+ ]
+}
+quentincaffeino_console_history_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777234,"unicode":0,"echo":false,"script":null)
+ ]
 }
 
 [input_devices]

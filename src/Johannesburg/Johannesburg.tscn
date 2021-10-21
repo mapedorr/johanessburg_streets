@@ -62,17 +62,17 @@ _data = {
 
 [sub_resource type="Curve2D" id=3]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -863, -428, 0, 0, 0, 0, -540, -428 )
+"points": PoolVector2Array( 0, 0, 0, 0, -1349, -428, 0, 0, 0, 0, -1349, -86 )
 }
 
 [sub_resource type="Curve2D" id=4]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -1349, -428, 0, 0, 0, 0, -1349, -86 )
+"points": PoolVector2Array( 0, 0, 0, 0, -540, -764, 0, 0, 0, 0, -540, -428, 0, 0, 0, 0, -89, -428, 0, 0, 0, 0, -89, -764 )
 }
 
 [sub_resource type="Curve2D" id=5]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -540, -764, 0, 0, 0, 0, -540, -428, 0, 0, 0, 0, -89, -428, 0, 0, 0, 0, -89, -764 )
+"points": PoolVector2Array( 0, 0, 0, 0, -863, -428, 0, 0, 0, 0, -540, -428 )
 }
 
 [sub_resource type="Curve2D" id=6]
@@ -82,17 +82,17 @@ _data = {
 
 [sub_resource type="Curve2D" id=7]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -89, -428, 0, 0, 0, 0, 163, -428 )
+"points": PoolVector2Array( 0, 0, 0, 0, -540, -428, 0, 0, 0, 0, -611, -86 )
 }
 
 [sub_resource type="Curve2D" id=8]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -540, -428, 0, 0, 0, 0, -611, -86 )
+"points": PoolVector2Array( 0, 0, 0, 0, 163, -764, 0, 0, 0, 0, 163, -428, 0, 0, 0, 0, 459, -428, 0, 0, 0, 0, 459, -764 )
 }
 
 [sub_resource type="Curve2D" id=9]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 163, -764, 0, 0, 0, 0, 163, -428, 0, 0, 0, 0, 459, -428, 0, 0, 0, 0, 459, -764 )
+"points": PoolVector2Array( 0, 0, 0, 0, -89, -428, 0, 0, 0, 0, 163, -428 )
 }
 
 [sub_resource type="Curve2D" id=10]
@@ -102,17 +102,17 @@ _data = {
 
 [sub_resource type="Curve2D" id=11]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 459, -428, 0, 0, 0, 0, 811, -428 )
+"points": PoolVector2Array( 0, 0, 0, 0, 163, -428, 0, 0, 0, 0, 83, -86 )
 }
 
 [sub_resource type="Curve2D" id=12]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 163, -428, 0, 0, 0, 0, 83, -86 )
+"points": PoolVector2Array( 0, 0, 0, 0, 811, -764, 0, 0, 0, 0, 811, -428, 0, 0, 0, 0, 1170, -428, 0, 0, 0, 0, 1170, -764 )
 }
 
 [sub_resource type="Curve2D" id=13]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 811, -764, 0, 0, 0, 0, 811, -428, 0, 0, 0, 0, 1170, -428, 0, 0, 0, 0, 1170, -764 )
+"points": PoolVector2Array( 0, 0, 0, 0, 459, -428, 0, 0, 0, 0, 811, -428 )
 }
 
 [sub_resource type="Curve2D" id=14]
@@ -132,22 +132,22 @@ _data = {
 
 [sub_resource type="Curve2D" id=17]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -962, 193, 0, 0, 0, 0, -611, 193 )
+"points": PoolVector2Array( 0, 0, 0, 0, -962, -86, 0, 0, 0, 0, -962, -428 )
 }
 
 [sub_resource type="Curve2D" id=18]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -962, -86, 0, 0, 0, 0, -962, -428 )
+"points": PoolVector2Array( 0, 0, 0, 0, -962, 193, 0, 0, 0, 0, -928, 509 )
 }
 
 [sub_resource type="Curve2D" id=19]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -962, 193, 0, 0, 0, 0, -928, 509 )
+"points": PoolVector2Array( 0, 0, 0, 0, -611, 193, 0, 0, 0, 0, -189, 193, 0, 0, 0, 0, -189, -86, 0, 0, 0, 0, -611, -86 )
 }
 
 [sub_resource type="Curve2D" id=20]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -611, 193, 0, 0, 0, 0, -189, 193, 0, 0, 0, 0, -189, -86, 0, 0, 0, 0, -611, -86 )
+"points": PoolVector2Array( 0, 0, 0, 0, -962, 193, 0, 0, 0, 0, -611, 193 )
 }
 
 [sub_resource type="Curve2D" id=21]
@@ -162,17 +162,17 @@ _data = {
 
 [sub_resource type="Curve2D" id=23]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -189, 193, 0, 0, 0, 0, 83, 193 )
+"points": PoolVector2Array( 0, 0, 0, 0, -611, 193, 0, 0, 0, 0, -643, 509 )
 }
 
 [sub_resource type="Curve2D" id=24]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -611, 193, 0, 0, 0, 0, -643, 509 )
+"points": PoolVector2Array( 0, 0, 0, 0, 83, -86, 0, 0, 0, 0, 83, 193, 0, 0, 0, 0, 459, 193, 0, 0, 0, 0, 459, -86 )
 }
 
 [sub_resource type="Curve2D" id=25]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 83, -86, 0, 0, 0, 0, 83, 193, 0, 0, 0, 0, 459, 193, 0, 0, 0, 0, 459, -86 )
+"points": PoolVector2Array( 0, 0, 0, 0, -189, 193, 0, 0, 0, 0, 83, 193 )
 }
 
 [sub_resource type="Curve2D" id=26]
@@ -182,22 +182,22 @@ _data = {
 
 [sub_resource type="Curve2D" id=27]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 459, 193, 0, 0, 0, 0, 874, 193 )
+"points": PoolVector2Array( 0, 0, 0, 0, 459, -86, 0, 0, 0, 0, 459, -428 )
 }
 
 [sub_resource type="Curve2D" id=28]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 459, -86, 0, 0, 0, 0, 459, -428 )
+"points": PoolVector2Array( 0, 0, 0, 0, 83, 193, 0, 0, 0, 0, 83, 509 )
 }
 
 [sub_resource type="Curve2D" id=29]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 83, 193, 0, 0, 0, 0, 83, 509 )
+"points": PoolVector2Array( 0, 0, 0, 0, 874, -86, 0, 0, 0, 0, 1170, -86, 0, 0, 0, 0, 1170, 193, 0, 0, 0, 0, 874, 193 )
 }
 
 [sub_resource type="Curve2D" id=30]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 874, -86, 0, 0, 0, 0, 1170, -86, 0, 0, 0, 0, 1170, 193, 0, 0, 0, 0, 874, 193 )
+"points": PoolVector2Array( 0, 0, 0, 0, 459, 193, 0, 0, 0, 0, 874, 193 )
 }
 
 [sub_resource type="Curve2D" id=31]
@@ -222,12 +222,12 @@ _data = {
 
 [sub_resource type="Curve2D" id=35]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -928, 842, 0, 0, 0, 0, -643, 842 )
+"points": PoolVector2Array( 0, 0, 0, 0, -643, 509, 0, 0, 0, 0, -189, 509, 0, 0, 0, 0, -189, 842, 0, 0, 0, 0, -643, 842 )
 }
 
 [sub_resource type="Curve2D" id=36]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -643, 509, 0, 0, 0, 0, -189, 509, 0, 0, 0, 0, -189, 842, 0, 0, 0, 0, -643, 842 )
+"points": PoolVector2Array( 0, 0, 0, 0, -928, 842, 0, 0, 0, 0, -643, 842 )
 }
 
 [sub_resource type="Curve2D" id=37]
@@ -247,17 +247,17 @@ _data = {
 
 [sub_resource type="Curve2D" id=40]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 459, 842, 0, 0, 0, 0, 811, 842 )
+"points": PoolVector2Array( 0, 0, 0, 0, 459, 509, 0, 0, 0, 0, 459, 193 )
 }
 
 [sub_resource type="Curve2D" id=41]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 459, 509, 0, 0, 0, 0, 459, 193 )
+"points": PoolVector2Array( 0, 0, 0, 0, 811, 509, 0, 0, 0, 0, 1170, 509, 0, 0, 0, 0, 1170, 842, 0, 0, 0, 0, 811, 842 )
 }
 
 [sub_resource type="Curve2D" id=42]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 811, 509, 0, 0, 0, 0, 1170, 509, 0, 0, 0, 0, 1170, 842, 0, 0, 0, 0, 811, 842 )
+"points": PoolVector2Array( 0, 0, 0, 0, 459, 842, 0, 0, 0, 0, 811, 842 )
 }
 
 [sub_resource type="Curve2D" id=43]
@@ -265,87 +265,87 @@ _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1170, 509, 0, 0, 0, 0, 1170, 193 )
 }
 
-[sub_resource type="Curve2D" id=53]
+[sub_resource type="Curve2D" id=44]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -897, -76, 0, 0, 0, 0, -677, -76, 0, 0, 0, 0, -677, 187, 0, 0, 0, 0, -897, 187 )
 }
 
-[sub_resource type="Curve2D" id=54]
+[sub_resource type="Curve2D" id=45]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -800, -932, 0, 0, 0, 0, -800, -395 )
 }
 
-[sub_resource type="Curve2D" id=55]
+[sub_resource type="Curve2D" id=46]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 35, 225, 0, 0, 0, 0, 35, -91 )
 }
 
-[sub_resource type="Curve2D" id=56]
+[sub_resource type="Curve2D" id=47]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 753, 958, 0, 0, 0, 0, 753, 482 )
 }
 
-[sub_resource type="Curve2D" id=57]
+[sub_resource type="Curve2D" id=48]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -189, -86, 0, 0, 0, 0, 83, -86, 0, 0, 0, 0, 83, 193, 0, 0, 0, 0, -189, 193 )
 }
 
-[sub_resource type="Curve2D" id=58]
+[sub_resource type="Curve2D" id=49]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 163, -428, 0, 0, 0, 0, -70, -428, 0, 0, 0, 0, -68, -661, 0, 0, 0, 0, 163, -661 )
 }
 
-[sub_resource type="Curve2D" id=59]
+[sub_resource type="Curve2D" id=50]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 459, -86, 0, 0, 0, 0, 874, -86, 0, 0, 0, 0, 874, 193, 0, 0, 0, 0, 459, 193 )
 }
 
-[sub_resource type="Curve2D" id=60]
+[sub_resource type="Curve2D" id=51]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -89, -764, 0, 0, 0, 0, 163, -764, 0, 0, 0, 0, 163, -428, 0, 0, 0, 0, -89, -428 )
 }
 
-[sub_resource type="Curve2D" id=44]
+[sub_resource type="Curve2D" id=52]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1485, -325, 0, 0, 0, 0, 845, -325, 0, 0, 0, 0, 163, -325, 0, 0, 0, 0, -1714, -325 )
 }
 
-[sub_resource type="Curve2D" id=45]
+[sub_resource type="Curve2D" id=53]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1485, -177, 0, 0, 0, 0, 886, -177, 0, 0, 0, 0, 163, -177, 0, 0, 0, 0, -1712, -177 )
 }
 
-[sub_resource type="Curve2D" id=46]
+[sub_resource type="Curve2D" id=54]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -1728, 298, 0, 0, 0, 0, -972, 298, 0, 0, 0, 0, -212, 298, 0, 0, 0, 0, 430, 298, 0, 0, 0, 0, 1485, 298 )
 }
 
-[sub_resource type="Curve2D" id=47]
+[sub_resource type="Curve2D" id=55]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1485, 430, 0, 0, 0, 0, 846, 430, 0, 0, 0, 0, 97, 430, 0, 0, 0, 0, -611, 430, 0, 0, 0, 0, -1726, 430 )
 }
 
-[sub_resource type="Curve2D" id=48]
+[sub_resource type="Curve2D" id=56]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -837, 1053, 0, 0, 0, 0, -837, 589, 0, 0, 0, 0, -837, 0, 0, 0, 0, 0, -837, -64, 0, 0, 0, 0, -729, -348, 0, 0, 0, 0, -729, -1005 )
 }
 
-[sub_resource type="Curve2D" id=49]
+[sub_resource type="Curve2D" id=57]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -643, -1006, 0, 0, 0, 0, -643, -449, 0, 0, 0, 0, -643, -348, 0, 0, 0, 0, -729, -64, 0, 0, 0, 0, -729, 170, 0, 0, 0, 0, -729, 1055 )
 }
 
-[sub_resource type="Curve2D" id=50]
+[sub_resource type="Curve2D" id=58]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 541, -1034, 0, 0, 0, 0, 541, -459, 0, 0, 0, 0, 541, 169, 0, 0, 0, 0, 541, 816, 0, 0, 0, 0, 541, 1080 )
 }
 
-[sub_resource type="Curve2D" id=51]
+[sub_resource type="Curve2D" id=59]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 680, -1033, 0, 0, 0, 0, 680, -458, 0, 0, 0, 0, 680, 170, 0, 0, 0, 0, 680, 816, 0, 0, 0, 0, 680, 1081 )
 }
 
-[sub_resource type="Curve2D" id=52]
+[sub_resource type="Curve2D" id=60]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1305, 1079, 0, 0, 0, 0, 1305, 575, 0, 0, 0, 0, 1305, 23, 0, 0, 0, 0, 1305, -1076 )
 }
@@ -374,15 +374,15 @@ script = ExtResource( 27 )
 curve = SubResource( 2 )
 script = ExtResource( 27 )
 
-[node name="B1-B2Bottom" type="Path2D" parent="PedestriansRoutes"]
+[node name="B1-B5" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 3 )
 script = ExtResource( 27 )
 
-[node name="B1-B5" type="Path2D" parent="PedestriansRoutes"]
+[node name="B2" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 4 )
 script = ExtResource( 27 )
 
-[node name="B2" type="Path2D" parent="PedestriansRoutes"]
+[node name="B2-B1" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 5 )
 script = ExtResource( 27 )
 
@@ -390,15 +390,15 @@ script = ExtResource( 27 )
 curve = SubResource( 6 )
 script = ExtResource( 27 )
 
-[node name="B2-B3Bottom" type="Path2D" parent="PedestriansRoutes"]
+[node name="B2-B6" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 7 )
 script = ExtResource( 27 )
 
-[node name="B2-B6" type="Path2D" parent="PedestriansRoutes"]
+[node name="B3" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 8 )
 script = ExtResource( 27 )
 
-[node name="B3" type="Path2D" parent="PedestriansRoutes"]
+[node name="B3-B2" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 9 )
 script = ExtResource( 27 )
 
@@ -406,15 +406,15 @@ script = ExtResource( 27 )
 curve = SubResource( 10 )
 script = ExtResource( 27 )
 
-[node name="B3-B4Bottom" type="Path2D" parent="PedestriansRoutes"]
+[node name="B3-B7" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 11 )
 script = ExtResource( 27 )
 
-[node name="B3-B7" type="Path2D" parent="PedestriansRoutes"]
+[node name="B4" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 12 )
 script = ExtResource( 27 )
 
-[node name="B4" type="Path2D" parent="PedestriansRoutes"]
+[node name="B4-B3" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 13 )
 script = ExtResource( 27 )
 
@@ -430,19 +430,19 @@ script = ExtResource( 27 )
 curve = SubResource( 16 )
 script = ExtResource( 27 )
 
-[node name="B5-B6Bottom" type="Path2D" parent="PedestriansRoutes"]
+[node name="B5-B1" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 17 )
 script = ExtResource( 27 )
 
-[node name="B5-B1" type="Path2D" parent="PedestriansRoutes"]
+[node name="B5-B9" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 18 )
 script = ExtResource( 27 )
 
-[node name="B5-B9" type="Path2D" parent="PedestriansRoutes"]
+[node name="B6" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 19 )
 script = ExtResource( 27 )
 
-[node name="B6" type="Path2D" parent="PedestriansRoutes"]
+[node name="B6-B5" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 20 )
 script = ExtResource( 27 )
 
@@ -454,15 +454,15 @@ script = ExtResource( 27 )
 curve = SubResource( 22 )
 script = ExtResource( 27 )
 
-[node name="B6-B7Bottom" type="Path2D" parent="PedestriansRoutes"]
+[node name="B6-B10" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 23 )
 script = ExtResource( 27 )
 
-[node name="B6-B10" type="Path2D" parent="PedestriansRoutes"]
+[node name="B7" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 24 )
 script = ExtResource( 27 )
 
-[node name="B7" type="Path2D" parent="PedestriansRoutes"]
+[node name="B7-B6" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 25 )
 script = ExtResource( 27 )
 
@@ -470,19 +470,19 @@ script = ExtResource( 27 )
 curve = SubResource( 26 )
 script = ExtResource( 27 )
 
-[node name="B7-B8Bottom" type="Path2D" parent="PedestriansRoutes"]
+[node name="B7-B3" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 27 )
 script = ExtResource( 27 )
 
-[node name="B7-B3" type="Path2D" parent="PedestriansRoutes"]
+[node name="B7-B11" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 28 )
 script = ExtResource( 27 )
 
-[node name="B7-B11" type="Path2D" parent="PedestriansRoutes"]
+[node name="B8" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 29 )
 script = ExtResource( 27 )
 
-[node name="B8" type="Path2D" parent="PedestriansRoutes"]
+[node name="B8-B7" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 30 )
 script = ExtResource( 27 )
 
@@ -502,11 +502,11 @@ script = ExtResource( 27 )
 curve = SubResource( 34 )
 script = ExtResource( 27 )
 
-[node name="B9-B10Bottom" type="Path2D" parent="PedestriansRoutes"]
+[node name="B10" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 35 )
 script = ExtResource( 27 )
 
-[node name="B10" type="Path2D" parent="PedestriansRoutes"]
+[node name="B10-B9" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 36 )
 script = ExtResource( 27 )
 
@@ -522,15 +522,15 @@ script = ExtResource( 27 )
 curve = SubResource( 39 )
 script = ExtResource( 27 )
 
-[node name="B11-B12Bottom" type="Path2D" parent="PedestriansRoutes"]
+[node name="B11-B7" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 40 )
 script = ExtResource( 27 )
 
-[node name="B11-B7" type="Path2D" parent="PedestriansRoutes"]
+[node name="B12" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 41 )
 script = ExtResource( 27 )
 
-[node name="B12" type="Path2D" parent="PedestriansRoutes"]
+[node name="B12-B11" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 42 )
 script = ExtResource( 27 )
 
@@ -540,49 +540,49 @@ script = ExtResource( 27 )
 
 [node name="Sweeper1" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.823529, 0.701961 )
-curve = SubResource( 53 )
+curve = SubResource( 44 )
 script = ExtResource( 27 )
 is_exclusive = true
 
 [node name="Sweeper2" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.823529, 0.701961 )
-curve = SubResource( 54 )
+curve = SubResource( 45 )
 script = ExtResource( 27 )
 is_exclusive = true
 
 [node name="Sweeper3" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.823529, 0.701961 )
-curve = SubResource( 55 )
+curve = SubResource( 46 )
 script = ExtResource( 27 )
 is_exclusive = true
 
 [node name="Sweeper4" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.823529, 0.701961 )
-curve = SubResource( 56 )
+curve = SubResource( 47 )
 script = ExtResource( 27 )
 is_exclusive = true
 
 [node name="CarGuard" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.870588, 0.701961 )
-curve = SubResource( 57 )
+curve = SubResource( 48 )
 script = ExtResource( 27 )
 is_exclusive = true
 
 [node name="CarGuard2" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.870588, 0.701961 )
-curve = SubResource( 58 )
+curve = SubResource( 49 )
 script = ExtResource( 27 )
 is_exclusive = true
 
 [node name="CarGuard3" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.870588, 0.701961 )
-curve = SubResource( 59 )
+curve = SubResource( 50 )
 script = ExtResource( 27 )
 is_exclusive = true
 
 [node name="Photographer" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.870588, 0.701961 )
-curve = SubResource( 60 )
+curve = SubResource( 51 )
 script = ExtResource( 27 )
 is_exclusive = true
 
@@ -591,39 +591,39 @@ visible = false
 
 [node name="Avenue1" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.94902, 0.501961, 1, 0.701961 )
-curve = SubResource( 44 )
+curve = SubResource( 52 )
 
 [node name="Avenue2" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.94902, 0.501961, 1, 0.701961 )
-curve = SubResource( 45 )
+curve = SubResource( 53 )
 
 [node name="Avenue3" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.94902, 0.501961, 1, 0.701961 )
-curve = SubResource( 46 )
+curve = SubResource( 54 )
 
 [node name="Avenue4" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.94902, 0.501961, 1, 0.701961 )
-curve = SubResource( 47 )
+curve = SubResource( 55 )
 
 [node name="Street1" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.631373, 1, 0.501961, 0.701961 )
-curve = SubResource( 48 )
+curve = SubResource( 56 )
 
 [node name="Street2" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.631373, 1, 0.501961, 0.701961 )
-curve = SubResource( 49 )
+curve = SubResource( 57 )
 
 [node name="Street4" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.631373, 1, 0.501961, 0.701961 )
-curve = SubResource( 50 )
+curve = SubResource( 58 )
 
 [node name="Street5" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.631373, 1, 0.501961, 0.701961 )
-curve = SubResource( 51 )
+curve = SubResource( 59 )
 
 [node name="Street6" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.631373, 1, 0.501961, 0.701961 )
-curve = SubResource( 52 )
+curve = SubResource( 60 )
 
 [node name="Objects" type="YSort" parent="."]
 
@@ -930,7 +930,7 @@ linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B1-B2") ]
 
 [node name="TraficLight_side6" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -821, -404 )
-linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B1-B2Bottom") ]
+linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B1-B2") ]
 
 [node name="TraficLight_side7" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -67, -671 )
@@ -951,7 +951,7 @@ linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B3-B4") ]
 
 [node name="TraficLight_side11" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 470, -405 )
-linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B3-B4Bottom") ]
+linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B3-B4") ]
 linked_lights = [ NodePath("../TraficLight_side13") ]
 
 [node name="TraficLight_side12" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
@@ -973,7 +973,7 @@ scale = Vector2( -1, 1 )
 
 [node name="TraficLight_side16" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -923, 227 )
-linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B5-B6Bottom") ]
+linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B5-B6") ]
 linked_lights = [ NodePath("../TraficLight_side18") ]
 
 [node name="TraficLight_side17" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
@@ -987,7 +987,7 @@ scale = Vector2( -1, 1 )
 
 [node name="TraficLight_side" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -127, 228 )
-linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B6-B7Bottom") ]
+linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B6-B7") ]
 linked_lights = [ NodePath("../TraficLight_side4") ]
 
 [node name="TraficLight_side3" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
@@ -1010,7 +1010,7 @@ linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue2") ]
 
 [node name="TraficLight_side23" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 472, 227 )
-linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B7-B8Bottom") ]
+linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B7-B8") ]
 linked_lights = [ NodePath("../TraficLight_side24") ]
 
 [node name="TraficLight_side24" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
@@ -1067,7 +1067,7 @@ linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue3") ]
 
 [node name="TraficLight_side31" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 473, 858 )
-linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B11-B12Bottom") ]
+linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B11-B12") ]
 linked_lights = [ NodePath("../TraficLight_side32") ]
 
 [node name="TraficLight_side32" parent="Objects/TrafficLights" instance=ExtResource( 25 )]

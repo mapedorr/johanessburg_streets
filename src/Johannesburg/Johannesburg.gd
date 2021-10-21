@@ -11,6 +11,7 @@ onready var _traffic_lights: YSort = find_node('TrafficLights')
 var _taxi := preload('res://src/Characters/Taxi/Taxi.tscn')
 # Mapa de rutas y sus puntos
 var _routes_points := {}
+var _routes_join := {}
 
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos de Godot ░░░░
@@ -19,7 +20,32 @@ func _ready() -> void:
 		if p.is_exclusive:
 			continue
 		
+		if p.name.find('-') > -1:
+			continue
+		
 		_routes_points[p.name] = range((p as Path2D).curve.get_point_count())
+		
+		# Recorrer los puntos de la ruta para ir creando el diccionario de
+		# conexión de rutas
+		for idx in _routes_points[p.name]:
+			var point_string := str((p as Path2D).curve.get_point_position(idx))
+			
+			if not _routes_join.has(point_string):
+				_routes_join[point_string] = {}
+				_routes_join[point_string][p.name] = idx
+	
+	for p in _pedestrians_routes.get_children():
+		if p.is_exclusive:
+			continue
+		
+		if p.name.find('-') < 0:
+			continue
+		
+		var curve: Curve2D = (p as Path2D).curve
+		for point_idx in curve.get_point_count():
+			var point_string := str(curve.get_point_position(point_idx))
+			if _routes_join.has(point_string):
+				_routes_join[point_string][p.name] = point_idx
 	
 	for tl in _traffic_lights.get_children():
 		if tl is TrafficLight:
@@ -111,26 +137,19 @@ func _select_new_target(character: KinematicBody2D) -> void:
 	var picked_route := false
 	
 	if character.can_change_route:
-		for r in _pedestrians_routes.get_children():
-			if r.get_instance_id() == character.current_route.get_instance_id():
-				continue
+		# Cambiar de ruta
+		var character_position_str := str(character.position)
+		if _routes_join.has(character_position_str):
+			var keys: Array = _routes_join[character_position_str].keys()
+			keys.erase(character.current_route.name)
 			
-			var route: Curve2D = (r as Path2D).curve
-			for idx in route.get_point_count():
-				if route.get_point_position(idx) == character.position:
-					var probability: float = r.weight / 100.0
-					randomize()
-					if randf() <= probability:
-						picked_route = true
-						
-						target_curve = route
-						character.current_route = r
-						character.target_point_idx = idx
-					
-						break
-			
-			if picked_route:
-				break
+			if not keys.empty():
+				keys.shuffle()
+				
+				character.current_route = _pedestrians_routes.get_node(keys[0])
+				target_curve = character.current_route.curve
+				character.target_point_idx = _routes_join[character_position_str][keys[0]]
+				picked_route = true
 	
 	# Ver si la nueva ruta tiene un semáforo asociado y verificar
 	# el estado del semáforo
