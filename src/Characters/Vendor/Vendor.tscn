@@ -1,8 +1,7 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://src/Characters/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Characters/Vendor/Vendor.png" type="Texture" id=2]
-[ext_resource path="res://src/Characters/Vendor/Smangele.jpg" type="Texture" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -150,9 +149,14 @@ extents = Vector2( 11.9478, 23 )
 
 [node name="Vendor" instance=ExtResource( 1 )]
 input_pickable = true
+speed = 0.0
 can_move = false
+can_change_route = false
 character_name = "Vendor"
-photo = ExtResource( 3 )
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="AnimatedSprite" parent="." index="1"]
 position = Vector2( 0, -20 )

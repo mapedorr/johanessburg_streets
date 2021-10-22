@@ -73,43 +73,43 @@ region = Rect2( 182, 140, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=18]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 210, 26, 70 )
+region = Rect2( 78, 140, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=19]
 atlas = ExtResource( 2 )
-region = Rect2( 26, 210, 26, 70 )
+region = Rect2( 78, 0, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 2 )
-region = Rect2( 52, 210, 26, 70 )
+region = Rect2( 0, 210, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 2 )
-region = Rect2( 78, 210, 26, 70 )
+region = Rect2( 26, 210, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=22]
 atlas = ExtResource( 2 )
-region = Rect2( 104, 210, 26, 70 )
+region = Rect2( 52, 210, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=23]
 atlas = ExtResource( 2 )
-region = Rect2( 130, 210, 26, 70 )
+region = Rect2( 78, 210, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=24]
 atlas = ExtResource( 2 )
-region = Rect2( 156, 210, 26, 70 )
+region = Rect2( 104, 210, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=25]
 atlas = ExtResource( 2 )
-region = Rect2( 182, 210, 26, 70 )
+region = Rect2( 130, 210, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=26]
 atlas = ExtResource( 2 )
-region = Rect2( 78, 140, 26, 70 )
+region = Rect2( 156, 210, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=27]
 atlas = ExtResource( 2 )
-region = Rect2( 78, 0, 26, 70 )
+region = Rect2( 182, 210, 26, 70 )
 
 [sub_resource type="SpriteFrames" id=28]
 animations = [ {
@@ -128,19 +128,19 @@ animations = [ {
 "name": "move_up",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
-"loop": true,
-"name": "move",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 26 ) ],
+"frames": [ SubResource( 18 ) ],
 "loop": false,
 "name": "idle_up",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 27 ) ],
+"frames": [ SubResource( 19 ) ],
 "loop": false,
 "name": "idle_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ) ],
+"loop": true,
+"name": "move",
 "speed": 5.0
 } ]
 
@@ -151,6 +151,10 @@ height = 45.9077
 [node name="Sangoma" instance=ExtResource( 1 )]
 input_pickable = true
 character_name = "Sangoma"
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="AnimatedSprite" parent="." index="1"]
 position = Vector2( 0, -34 )

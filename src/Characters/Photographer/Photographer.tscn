@@ -1,36 +1,35 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://src/Characters/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Characters/Photographer/Photographer.png" type="Texture" id=2]
-[ext_resource path="res://src/Characters/Photographer/GcinaPhotographer.jpg" type="Texture" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
-region = Rect2( 35, 150, 35, 75 )
+region = Rect2( 70, 450, 35, 75 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
-region = Rect2( 70, 150, 35, 75 )
+region = Rect2( 35, 150, 35, 75 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
-region = Rect2( 105, 150, 35, 75 )
+region = Rect2( 70, 150, 35, 75 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 2 )
-region = Rect2( 140, 150, 35, 75 )
+region = Rect2( 105, 150, 35, 75 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 2 )
-region = Rect2( 175, 150, 35, 75 )
+region = Rect2( 140, 150, 35, 75 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 225, 35, 75 )
+region = Rect2( 175, 150, 35, 75 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 2 )
-region = Rect2( 70, 450, 35, 75 )
+region = Rect2( 0, 225, 35, 75 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 2 )
@@ -174,14 +173,14 @@ region = Rect2( 0, 375, 35, 75 )
 
 [sub_resource type="SpriteFrames" id=43]
 animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
-"loop": true,
-"name": "action",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 7 ) ],
+"frames": [ SubResource( 1 ) ],
 "loop": false,
 "name": "idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "action",
 "speed": 5.0
 }, {
 "frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
@@ -226,9 +225,13 @@ height = 46.6424
 
 [node name="Photographer" instance=ExtResource( 1 )]
 input_pickable = true
+speed = 60.0
 can_change_route = false
 character_name = "Photographer"
-photo = ExtResource( 3 )
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="AnimatedSprite" parent="." index="1"]
 position = Vector2( 0, -35 )

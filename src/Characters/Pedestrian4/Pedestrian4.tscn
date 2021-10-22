@@ -73,43 +73,43 @@ region = Rect2( 26, 280, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=18]
 atlas = ExtResource( 2 )
-region = Rect2( 78, 280, 26, 70 )
+region = Rect2( 52, 280, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=19]
 atlas = ExtResource( 2 )
-region = Rect2( 104, 280, 26, 70 )
+region = Rect2( 52, 70, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 2 )
-region = Rect2( 130, 280, 26, 70 )
+region = Rect2( 78, 280, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 350, 26, 70 )
+region = Rect2( 104, 280, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=22]
 atlas = ExtResource( 2 )
-region = Rect2( 26, 350, 26, 70 )
+region = Rect2( 130, 280, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=23]
 atlas = ExtResource( 2 )
-region = Rect2( 52, 350, 26, 70 )
+region = Rect2( 0, 350, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=24]
 atlas = ExtResource( 2 )
-region = Rect2( 78, 350, 26, 70 )
+region = Rect2( 26, 350, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=25]
 atlas = ExtResource( 2 )
-region = Rect2( 104, 350, 26, 70 )
+region = Rect2( 52, 350, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=26]
 atlas = ExtResource( 2 )
-region = Rect2( 52, 280, 26, 70 )
+region = Rect2( 78, 350, 26, 70 )
 
 [sub_resource type="AtlasTexture" id=27]
 atlas = ExtResource( 2 )
-region = Rect2( 52, 70, 26, 70 )
+region = Rect2( 104, 350, 26, 70 )
 
 [sub_resource type="SpriteFrames" id=28]
 animations = [ {
@@ -128,19 +128,19 @@ animations = [ {
 "name": "move_up",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
-"loop": true,
-"name": "move",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 26 ) ],
+"frames": [ SubResource( 18 ) ],
 "loop": false,
 "name": "idle_up",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 27 ) ],
+"frames": [ SubResource( 19 ) ],
 "loop": false,
 "name": "idle_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ) ],
+"loop": true,
+"name": "move",
 "speed": 5.0
 } ]
 
@@ -150,7 +150,12 @@ height = 42.0588
 
 [node name="Pedestrian4" instance=ExtResource( 1 )]
 input_pickable = true
+speed = 40.0
 character_name = "Pedestrian"
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="AnimatedSprite" parent="." index="1"]
 position = Vector2( 0, -32 )
