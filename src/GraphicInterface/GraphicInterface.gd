@@ -24,8 +24,8 @@ func _show_character_info(character: KinematicBody2D) -> void:
 	
 	_character_info.window_title = character.character_name
 	
-	if character.photo:
-		_character_photo.texture = character.photo
+	if character.character_photo:
+		_character_photo.texture = character.character_photo
 		_character_photo.show()
 	
 	if character.character_description:

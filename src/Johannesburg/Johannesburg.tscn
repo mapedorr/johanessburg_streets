@@ -720,179 +720,450 @@ offset = Vector2( 0, -234 )
 [node name="Characters" type="YSort" parent="Objects"]
 
 [node name="Pedestrian4" parent="Objects/Characters" instance=ExtResource( 42 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Pedestrian3" parent="Objects/Characters" instance=ExtResource( 49 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Pedestrian2" parent="Objects/Characters" instance=ExtResource( 45 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Pedestrian1" parent="Objects/Characters" instance=ExtResource( 44 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Pedestrian" parent="Objects/Characters" instance=ExtResource( 43 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Photographer" parent="Objects/Characters" instance=ExtResource( 47 )]
-target_route_path = NodePath("../../../PedestriansRoutes/Photographer")
+can_change_route = true
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Bigmama" parent="Objects/Characters" instance=ExtResource( 46 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Recycler" parent="Objects/Characters" instance=ExtResource( 48 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Trolly2" parent="Objects/Characters" instance=ExtResource( 39 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Trolly" parent="Objects/Characters" instance=ExtResource( 39 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="LadySeller2" parent="Objects/Characters" instance=ExtResource( 38 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="LadySeller1" parent="Objects/Characters" instance=ExtResource( 41 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Sweeper" parent="Objects/Characters" instance=ExtResource( 36 )]
-target_route_path = NodePath("../../../PedestriansRoutes/Sweeper1")
+can_change_route = true
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Sweeper2" parent="Objects/Characters" instance=ExtResource( 36 )]
-target_route_path = NodePath("../../../PedestriansRoutes/Sweeper2")
+can_change_route = true
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Sweeper3" parent="Objects/Characters" instance=ExtResource( 36 )]
-target_route_path = NodePath("../../../PedestriansRoutes/Sweeper3")
+can_change_route = true
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Sweeper4" parent="Objects/Characters" instance=ExtResource( 36 )]
-target_route_path = NodePath("../../../PedestriansRoutes/Sweeper4")
+can_change_route = true
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Sangoma" parent="Objects/Characters" instance=ExtResource( 35 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Begger" parent="Objects/Characters" instance=ExtResource( 34 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Seller" parent="Objects/Characters" instance=ExtResource( 33 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Car_washer" parent="Objects/Characters" instance=ExtResource( 32 )]
-target_route_path = NodePath("../../../PedestriansRoutes/CarGuard")
+speed = 50.0
+can_change_route = true
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Car_washer2" parent="Objects/Characters" instance=ExtResource( 32 )]
-target_route_path = NodePath("../../../PedestriansRoutes/CarGuard2")
+speed = 50.0
+can_change_route = true
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Car_washer3" parent="Objects/Characters" instance=ExtResource( 32 )]
-target_route_path = NodePath("../../../PedestriansRoutes/CarGuard3")
+speed = 50.0
+can_change_route = true
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Car_guard" parent="Objects/Characters" instance=ExtResource( 31 )]
-target_route_path = NodePath("../../../PedestriansRoutes/CarGuard")
+speed = 50.0
+can_change_route = true
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Car_guard2" parent="Objects/Characters" instance=ExtResource( 31 )]
-target_route_path = NodePath("../../../PedestriansRoutes/CarGuard2")
+speed = 50.0
+can_change_route = true
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Car_guard3" parent="Objects/Characters" instance=ExtResource( 31 )]
-target_route_path = NodePath("../../../PedestriansRoutes/CarGuard3")
+speed = 50.0
+can_change_route = true
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Criminal" parent="Objects/Characters" instance=ExtResource( 2 )]
-speed = 100.0
+speed = 300.0
+blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1") ]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Madman" parent="Objects/Characters" instance=ExtResource( 5 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Madman2" parent="Objects/Characters" instance=ExtResource( 5 )]
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="CowManB3" parent="Objects/Characters" instance=ExtResource( 28 )]
 position = Vector2( 218, -784 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="CowManB4" parent="Objects/Characters" instance=ExtResource( 28 )]
 position = Vector2( 922, -437 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="CowManB11" parent="Objects/Characters" instance=ExtResource( 28 )]
 position = Vector2( 293, 813 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="SweetSellerB2Top" parent="Objects/Characters" instance=ExtResource( 29 )]
 position = Vector2( -90, -804 )
-initial_animation = "idle_down"
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="SweetSellerB2Bottom" parent="Objects/Characters" instance=ExtResource( 29 )]
 position = Vector2( -108, -474 )
-initial_animation = "idle_down"
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="SweetSellerB5" parent="Objects/Characters" instance=ExtResource( 29 )]
 position = Vector2( -958, 154 )
-initial_animation = "idle_down"
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="SweetSellerB6" parent="Objects/Characters" instance=ExtResource( 29 )]
 position = Vector2( -203, 71 )
 scale = Vector2( -1, 1 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="SweetSellerB10" parent="Objects/Characters" instance=ExtResource( 29 )]
 position = Vector2( -177, 740 )
 scale = Vector2( -1, 1 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="SweetSellerB11Bottom" parent="Objects/Characters" instance=ExtResource( 29 )]
 position = Vector2( 60, 803 )
 scale = Vector2( -1, 1 )
-initial_animation = "idle_down"
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="SweetSellerB11Top" parent="Objects/Characters" instance=ExtResource( 29 )]
 position = Vector2( 268, 541 )
 scale = Vector2( -1, 1 )
-initial_animation = "idle_up"
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="HairdresserB2" parent="Objects/Characters" instance=ExtResource( 30 )]
 position = Vector2( -96, -532 )
 scale = Vector2( -1, 1 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="HairdresserB3Left" parent="Objects/Characters" instance=ExtResource( 30 )]
 position = Vector2( 203, -468 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="HeirdresserB3Right" parent="Objects/Characters" instance=ExtResource( 30 )]
 position = Vector2( 432, -467 )
-initial_animation = "idle_down"
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="HeirdresserB5" parent="Objects/Characters" instance=ExtResource( 30 )]
 position = Vector2( 106, 222 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="HeirdresserB6" parent="Objects/Characters" instance=ExtResource( 30 )]
 position = Vector2( 60, 536 )
-initial_animation = "idle_up"
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="MiliSellerB2" parent="Objects/Characters" instance=ExtResource( 37 )]
 position = Vector2( -102, -626 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="MiliSellerB3" parent="Objects/Characters" instance=ExtResource( 37 )]
 position = Vector2( 184, -709 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="MiliSellerB6" parent="Objects/Characters" instance=ExtResource( 37 )]
 position = Vector2( -207, 154 )
 scale = Vector2( -1, 1 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="MiliSellerB10" parent="Objects/Characters" instance=ExtResource( 37 )]
 position = Vector2( -207, 805 )
-initial_animation = "idle_down"
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="MiliSellerB11Left" parent="Objects/Characters" instance=ExtResource( 37 )]
 position = Vector2( -25, 617 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="MiliSellerB11top" parent="Objects/Characters" instance=ExtResource( 37 )]
 position = Vector2( 333, 544 )
-initial_animation = "idle_down"
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="VendorB3" parent="Objects/Characters" instance=ExtResource( 40 )]
 position = Vector2( 450, -775 )
 scale = Vector2( -1, 1 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="VendorB4" parent="Objects/Characters" instance=ExtResource( 40 )]
 position = Vector2( 817, -784 )
 scale = Vector2( -1, 1 )
-initial_animation = "idle_down"
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="VendorB6" parent="Objects/Characters" instance=ExtResource( 40 )]
 position = Vector2( -207, 4 )
 scale = Vector2( -1, 1 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="VendorB7" parent="Objects/Characters" instance=ExtResource( 40 )]
 position = Vector2( 91, 154 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="VendorB10" parent="Objects/Characters" instance=ExtResource( 40 )]
 position = Vector2( -194, 676 )
 scale = Vector2( -1, 1 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="VendorB11" parent="Objects/Characters" instance=ExtResource( 40 )]
 position = Vector2( -31, 758 )
 scale = Vector2( -1, 1 )
-initial_animation = "idle_down"
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Taxis" type="YSort" parent="Objects"]
 

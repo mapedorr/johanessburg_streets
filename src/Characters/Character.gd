@@ -11,12 +11,14 @@ export var can_change_route := true
 export var restart_on_end := false
 export(String, 'idle', 'idle_down', 'idle_up') var initial_animation := 'idle'
 export var target_route_path: NodePath = ''
-export var character_name := ''
-export(String, MULTILINE) var character_description := ''
-export var greeting_sfx := ''
-export var photo: Texture = null
-export var audio := ''
+export(Array, NodePath) var blocks_to_ignore := []
+export(Array, NodePath) var blocks_to_take := []
 
+var character_name := ''
+var character_description := ''
+var character_greeting_sfx := ''
+var character_photo: Texture = null
+var character_audio := ''
 var target_point_idx := -1
 var current_route: Path2D = null
 var can_cross := true setget _set_can_cross
@@ -31,6 +33,42 @@ func _ready() -> void:
 	self.connect('input_event', self, '_on_input_event')
 	
 	$AnimatedSprite.play(initial_animation)
+
+
+func _get_property_list() -> Array:
+	var properties = []
+	
+	properties.append({
+		name = "Detalle del personaje",
+		type = TYPE_NIL,
+		hint_string = "character_",
+		usage = PROPERTY_USAGE_GROUP | PROPERTY_USAGE_SCRIPT_VARIABLE
+	})
+	properties.append({
+		name = "character_name",
+		type = TYPE_STRING
+	})
+	properties.append({
+		name = "character_description",
+		type = TYPE_STRING,
+		hint = PROPERTY_HINT_MULTILINE_TEXT
+	})
+	properties.append({
+		name = "character_greeting_sfx",
+		type = TYPE_STRING
+	})
+	properties.append({
+		name = "character_photo",
+		type = TYPE_OBJECT,
+		hint = PROPERTY_HINT_RESOURCE_TYPE,
+		hint_string = 'Texture'
+	})
+	properties.append({
+		name = "character_audio",
+		type = TYPE_STRING
+	})
+	
+	return properties
 
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos virtuales ░░░░
@@ -77,7 +115,7 @@ func _move_finished() -> void:
 
 func _on_input_event(_viewport, event, _shape_idx):
 	if event is InputEventScreenTouch:
-		if not event.pressed and photo:
+		if not event.pressed and character_photo:
 			E.emit_signal('character_clicked', self)
 
 

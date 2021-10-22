@@ -74,6 +74,9 @@ func _start() -> void:
 			# Escoger una ruta al azar para empezar a caminar
 			var routes: Array = _routes_points.keys()
 			
+			for path in character.blocks_to_ignore:
+				routes.erase(character.get_node(path).name)
+			
 			randomize()
 			route = _pedestrians_routes.get_node(
 				routes[randi() % routes.size()]
@@ -142,6 +145,21 @@ func _select_new_target(character: KinematicBody2D) -> void:
 		if _routes_join.has(character_position_str):
 			var keys: Array = _routes_join[character_position_str].keys()
 			keys.erase(character.current_route.name)
+			
+			# Eliminar de la lista de opciones las rutas que vayan a cuadras
+			# prohibidas.
+			for path in character.blocks_to_ignore:
+				var block_name := character.get_node(path).name
+				
+				keys.erase(block_name)
+				
+				var positions_to_remove := []
+				for idx in keys.size():
+					if Array(keys[idx].split('-')).find(block_name) > -1:
+						positions_to_remove.append(idx)
+				
+				for idx in positions_to_remove:
+					keys.remove(idx)
 			
 			if not keys.empty():
 				keys.shuffle()
