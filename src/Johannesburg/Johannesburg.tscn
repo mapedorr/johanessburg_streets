@@ -1,4 +1,4 @@
-[gd_scene load_steps=114 format=2]
+[gd_scene load_steps=136 format=2]
 
 [ext_resource path="res://src/Johannesburg/sprites/FirtsLine/B1_BankBuilding.png" type="Texture" id=1]
 [ext_resource path="res://src/Characters/Criminal/Criminal.tscn" type="PackedScene" id=2]
@@ -53,6 +53,26 @@
 [ext_resource path="res://src/Characters/MiliSeller/MiliSeller.jpg" type="Texture" id=51]
 [ext_resource path="res://src/Characters/SweetSeller/Vendor.jpg" type="Texture" id=52]
 [ext_resource path="res://src/Characters/Photographer/GcinaPhotographer.jpg" type="Texture" id=53]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Add1.png" type="Texture" id=54]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Posts.png" type="Texture" id=55]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Add3.png" type="Texture" id=56]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Add2.png" type="Texture" id=57]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Post.png" type="Texture" id=58]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Add5.png" type="Texture" id=59]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Add4.png" type="Texture" id=60]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Add6.png" type="Texture" id=61]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Semaforos refecncia.png" type="Texture" id=62]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Post2.png" type="Texture" id=63]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Posts3.png" type="Texture" id=64]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Posts2.png" type="Texture" id=65]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Post3.png" type="Texture" id=66]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/add7.png" type="Texture" id=67]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Shadow.png" type="Texture" id=68]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Shadow2.png" type="Texture" id=69]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/add8.png" type="Texture" id=70]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/add10.png" type="Texture" id=71]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Posts4.png" type="Texture" id=72]
+[ext_resource path="res://src/Johannesburg/sprites/Aditionals/Post5.png" type="Texture" id=73]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
@@ -354,6 +374,12 @@ _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1305, 1079, 0, 0, 0, 0, 1305, 575, 0, 0, 0, 0, 1305, 23, 0, 0, 0, 0, 1305, -1076 )
 }
 
+[sub_resource type="CanvasItemMaterial" id=61]
+blend_mode = 2
+
+[sub_resource type="CanvasItemMaterial" id=62]
+blend_mode = 2
+
 [node name="Johannesburg" type="Node2D"]
 script = ExtResource( 4 )
 __meta__ = {
@@ -366,9 +392,18 @@ wait_time = 20.0
 autostart = true
 
 [node name="Streets" type="Sprite" parent="."]
+position = Vector2( 0.303301, 6 )
 texture = ExtResource( 7 )
+offset = Vector2( -0.303301, -6 )
+
+[node name="sema" type="Sprite" parent="."]
+visible = false
+position = Vector2( 133, 620.5 )
+texture = ExtResource( 62 )
+offset = Vector2( -0.303301, -6 )
 
 [node name="PedestriansRoutes" type="Node2D" parent="."]
+position = Vector2( 0, 1 )
 
 [node name="B1" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 1 )
@@ -632,7 +667,7 @@ curve = SubResource( 60 )
 [node name="Objects" type="YSort" parent="."]
 
 [node name="B1-Bank" type="Sprite" parent="Objects"]
-position = Vector2( -1102.5, -462 )
+position = Vector2( -1100.5, -462 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, -207.5 )
 
@@ -651,6 +686,11 @@ position = Vector2( 360.5, -214 )
 texture = ExtResource( 13 )
 offset = Vector2( 0, -34 )
 
+[node name="Publicity" type="Sprite" parent="Objects/B2-PicknPay"]
+position = Vector2( 153.5, -141 )
+texture = ExtResource( 70 )
+offset = Vector2( 0, -132 )
+
 [node name="B3_Building" type="Sprite" parent="Objects"]
 position = Vector2( 308, -472 )
 texture = ExtResource( 11 )
@@ -665,6 +705,11 @@ offset = Vector2( 0, -211 )
 position = Vector2( -1192.5, 157.5 )
 texture = ExtResource( 14 )
 offset = Vector2( 0, -360 )
+
+[node name="B6-Publicity" type="Sprite" parent="Objects"]
+position = Vector2( -614.122, -10.6378 )
+texture = ExtResource( 54 )
+offset = Vector2( 0, -18 )
 
 [node name="B6-Flats" type="Sprite" parent="Objects"]
 position = Vector2( -494.5, 157.5 )
@@ -686,6 +731,12 @@ position = Vector2( 270, 159.5 )
 texture = ExtResource( 16 )
 offset = Vector2( 0, -94 )
 
+[node name="Sprite" type="Sprite" parent="Objects/B7-Busines"]
+show_behind_parent = true
+position = Vector2( 0, 31.5 )
+texture = ExtResource( 68 )
+offset = Vector2( 0, -173.75 )
+
 [node name="B8-Building" type="Sprite" parent="Objects"]
 position = Vector2( 1036, 204 )
 texture = ExtResource( 18 )
@@ -696,10 +747,16 @@ position = Vector2( 246, -351 )
 texture = ExtResource( 19 )
 offset = Vector2( 0, -73 )
 
+[node name="Shadow" type="Sprite" parent="Objects/B8-Building"]
+material = SubResource( 61 )
+position = Vector2( 246.5, -91.5 )
+texture = ExtResource( 69 )
+offset = Vector2( 0, -55.5 )
+
 [node name="B9-Church" type="Sprite" parent="Objects"]
-position = Vector2( -1170, 790 )
+position = Vector2( -1171, 797.5 )
 texture = ExtResource( 20 )
-offset = Vector2( 0, -541 )
+offset = Vector2( 0, -599.5 )
 
 [node name="B10-School" type="Sprite" parent="Objects"]
 position = Vector2( -427.5, 788 )
@@ -711,15 +768,91 @@ position = Vector2( 202.5, 788 )
 texture = ExtResource( 22 )
 offset = Vector2( 0, -150 )
 
+[node name="B11-Gab" type="Sprite" parent="Objects"]
+position = Vector2( 437.486, 726 )
+texture = ExtResource( 57 )
+offset = Vector2( 3.33731, -85.5 )
+
 [node name="B12-Building" type="Sprite" parent="Objects"]
 position = Vector2( 990, 788 )
 texture = ExtResource( 24 )
 offset = Vector2( 0, -439 )
 
+[node name="B12-Shadow" type="Sprite" parent="Objects/B12-Building"]
+material = SubResource( 62 )
+position = Vector2( 215.031, -189.434 )
+texture = ExtResource( 56 )
+
 [node name="B12-Bridge" type="Sprite" parent="Objects/B12-Building"]
 position = Vector2( 216, -73 )
 texture = ExtResource( 23 )
 offset = Vector2( 0, -234 )
+
+[node name="LightPost" type="Sprite" parent="Objects"]
+position = Vector2( -298.222, 507.091 )
+texture = ExtResource( 55 )
+offset = Vector2( -3.05176e-05, -122.5 )
+
+[node name="Publicity" type="Sprite" parent="Objects/LightPost"]
+position = Vector2( 595.25, -58.5 )
+texture = ExtResource( 60 )
+offset = Vector2( 0, -9 )
+
+[node name="Post" type="Sprite" parent="Objects"]
+position = Vector2( 777.5, 857.5 )
+texture = ExtResource( 58 )
+offset = Vector2( 0, -169.434 )
+
+[node name="Bin" type="Sprite" parent="Objects"]
+position = Vector2( 0.303299, 498.066 )
+texture = ExtResource( 59 )
+offset = Vector2( 0, -20.5 )
+
+[node name="Trash" type="Sprite" parent="Objects"]
+position = Vector2( 138.604, 552.354 )
+texture = ExtResource( 61 )
+offset = Vector2( -0.290039, -10.5 )
+
+[node name="Posts2" type="Sprite" parent="Objects"]
+position = Vector2( -320.96, -90.5 )
+texture = ExtResource( 65 )
+offset = Vector2( 0, -122.5 )
+
+[node name="Publicity" type="Sprite" parent="Objects/Posts2"]
+position = Vector2( 143.83, -40 )
+texture = ExtResource( 67 )
+offset = Vector2( 0, -23 )
+
+[node name="Post2" type="Sprite" parent="Objects"]
+position = Vector2( 777.278, -60.5 )
+texture = ExtResource( 63 )
+offset = Vector2( 0, -122.5 )
+
+[node name="Post3" type="Sprite" parent="Objects"]
+position = Vector2( 782.5, 227.265 )
+texture = ExtResource( 66 )
+offset = Vector2( 0, -144 )
+
+[node name="Posts3" type="Sprite" parent="Objects"]
+position = Vector2( 782.5, -304.257 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -287 )
+
+[node name="Posts4" type="Sprite" parent="Objects"]
+show_behind_parent = true
+position = Vector2( -1375.86, -335.5 )
+texture = ExtResource( 72 )
+offset = Vector2( 0, -271 )
+
+[node name="Publicity" type="Sprite" parent="Objects/Posts4"]
+position = Vector2( 2.08142, -91.6115 )
+texture = ExtResource( 71 )
+offset = Vector2( 0, -22.5 )
+
+[node name="Post5" type="Sprite" parent="Objects"]
+position = Vector2( -1376.41, 228 )
+texture = ExtResource( 73 )
+offset = Vector2( 0, -159.301 )
 
 [node name="Characters" type="YSort" parent="Objects"]
 
@@ -802,18 +935,10 @@ character_audio = ""
 [node name="LadySeller2" parent="Objects/Characters" instance=ExtResource( 38 )]
 speed = 46.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="LadySeller1" parent="Objects/Characters" instance=ExtResource( 41 )]
 speed = 44.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Sangoma" parent="Objects/Characters" instance=ExtResource( 35 )]
 speed = 40.0
@@ -1058,6 +1183,13 @@ rotation = 3.14159
 scale = Vector2( 1, -1 )
 character_photo = ExtResource( 51 )
 
+[node name="MiliSeller4" parent="Objects/StillCharacter" instance=ExtResource( 37 )]
+position = Vector2( -542.264, -791.513 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+initial_animation = "idle_down"
+character_photo = ExtResource( 51 )
+
 [node name="MiliSellerB10" parent="Objects/StillCharacter" instance=ExtResource( 37 )]
 position = Vector2( -215.839, 809.596 )
 speed = 0.0
@@ -1246,11 +1378,11 @@ linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B9-B10") ]
 linked_lights = [ NodePath("../TraficLight_side28") ]
 
 [node name="TraficLight_side27" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
-position = Vector2( -672, 478 )
+position = Vector2( -644.776, 473.05 )
 linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue4") ]
 
 [node name="TraficLight_side28" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
-position = Vector2( -654, 497 )
+position = Vector2( -658.596, 508.314 )
 scale = Vector2( -1, 1 )
 
 [node name="TraficLight_side2" parent="Objects/TrafficLights" instance=ExtResource( 25 )]

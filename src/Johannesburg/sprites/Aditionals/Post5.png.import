@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/streets.png-bb953f3dc139c83fee17f1c9ef8c7dab.stex"
+path="res://.import/Post5.png-ce4ee146c0c9a99b115bc68997e1d809.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Johannesburg/sprites/streets.png"
-dest_files=[ "res://.import/streets.png-bb953f3dc139c83fee17f1c9ef8c7dab.stex" ]
+source_file="res://src/Johannesburg/sprites/Aditionals/Post5.png"
+dest_files=[ "res://.import/Post5.png-ce4ee146c0c9a99b115bc68997e1d809.stex" ]
 
 [params]
 
