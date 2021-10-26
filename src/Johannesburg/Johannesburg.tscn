@@ -366,7 +366,7 @@ _data = {
 
 [sub_resource type="Curve2D" id=59]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 680, -1033, 0, 0, 0, 0, 680, -458, 0, 0, 0, 0, 680, 170, 0, 0, 0, 0, 680, 816, 0, 0, 0, 0, 680, 1081 )
+"points": PoolVector2Array( 0, 0, 0, 0, 631, -1034, 0, 0, 0, 0, 631, -458, 0, 0, 0, 0, 631, 170, 0, 0, 0, 0, 631, 816, 0, 0, 0, 0, 631, 1080 )
 }
 
 [sub_resource type="Curve2D" id=60]
@@ -384,7 +384,7 @@ blend_mode = 2
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_horizontal_guides_": [ -764.0, -428.0, -86.0, 193.0, 509.0, 842.0, -177.0, -325.0, 298.0, 430.0, -348.0, -64.0, -458.0, 170.0, 816.0 ],
-"_edit_vertical_guides_": [ -1349.0, -837.0, -540.0, -89.0, 163.0, 459.0, 811.0, 1170.0, -189.0, -611.0, -962.0, -1474.0, 83.0, 874.0, -928.0, -643.0, 1485.0, -729.0, -764.0, 541.0, 680.0, 1305.0, 1216.0, 753.0 ]
+"_edit_vertical_guides_": [ -1349.0, -837.0, -540.0, -89.0, 163.0, 459.0, 811.0, 1170.0, -189.0, -611.0, -962.0, -1474.0, 83.0, 874.0, -928.0, -643.0, 1485.0, -729.0, -764.0, 541.0, 631.151, 1305.0, 1216.0, 753.0 ]
 }
 
 [node name="TrafficLightsTimer" type="Timer" parent="."]
@@ -626,7 +626,6 @@ script = ExtResource( 27 )
 is_exclusive = true
 
 [node name="TaxisRoutes" type="Node2D" parent="."]
-visible = false
 
 [node name="Avenue1" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.94902, 0.501961, 1, 0.701961 )
@@ -666,124 +665,127 @@ curve = SubResource( 60 )
 
 [node name="Objects" type="YSort" parent="."]
 
-[node name="B1-Bank" type="Sprite" parent="Objects"]
+[node name="Buildings" type="YSort" parent="Objects"]
+visible = false
+
+[node name="B1-Bank" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( -1100.5, -462 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, -207.5 )
 
-[node name="B2-PicknPay" type="Sprite" parent="Objects"]
+[node name="B2-PicknPay" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( -314.5, -472 )
 texture = ExtResource( 9 )
 offset = Vector2( -10, -170.5 )
 
-[node name="PicknPay" type="Sprite" parent="Objects/B2-PicknPay"]
+[node name="PicknPay" type="Sprite" parent="Objects/Buildings/B2-PicknPay"]
 position = Vector2( -225.5, -165 )
 texture = ExtResource( 10 )
 offset = Vector2( 0, -66 )
 
-[node name="HEITA" type="Sprite" parent="Objects/B2-PicknPay"]
+[node name="HEITA" type="Sprite" parent="Objects/Buildings/B2-PicknPay"]
 position = Vector2( 360.5, -214 )
 texture = ExtResource( 13 )
 offset = Vector2( 0, -34 )
 
-[node name="Publicity" type="Sprite" parent="Objects/B2-PicknPay"]
+[node name="Publicity" type="Sprite" parent="Objects/Buildings/B2-PicknPay"]
 position = Vector2( 153.5, -141 )
 texture = ExtResource( 70 )
 offset = Vector2( 0, -132 )
 
-[node name="B3_Building" type="Sprite" parent="Objects"]
+[node name="B3_Building" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( 308, -472 )
 texture = ExtResource( 11 )
 offset = Vector2( 0, -203 )
 
-[node name="B4-AbandonedFlat" type="Sprite" parent="Objects"]
+[node name="B4-AbandonedFlat" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( 990, -455 )
 texture = ExtResource( 12 )
 offset = Vector2( 0, -211 )
 
-[node name="B5-Building" type="Sprite" parent="Objects"]
+[node name="B5-Building" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( -1192.5, 157.5 )
 texture = ExtResource( 14 )
 offset = Vector2( 0, -360 )
 
-[node name="B6-Publicity" type="Sprite" parent="Objects"]
+[node name="B6-Publicity" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( -614.122, -10.6378 )
 texture = ExtResource( 54 )
 offset = Vector2( 0, -18 )
 
-[node name="B6-Flats" type="Sprite" parent="Objects"]
+[node name="B6-Flats" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( -494.5, 157.5 )
 texture = ExtResource( 3 )
 offset = Vector2( 0, -360 )
 
-[node name="B6-FairPrice" type="Sprite" parent="Objects"]
+[node name="B6-FairPrice" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( -315, 158 )
 texture = ExtResource( 15 )
 offset = Vector2( 0, -383 )
 
-[node name="B7-Flats" type="Sprite" parent="Objects"]
+[node name="B7-Flats" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( 273, 191 )
 texture = ExtResource( 17 )
 offset = Vector2( 0, -337 )
 
-[node name="B7-Busines" type="Sprite" parent="Objects"]
+[node name="B7-Busines" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( 270, 159.5 )
 texture = ExtResource( 16 )
 offset = Vector2( 0, -94 )
 
-[node name="Sprite" type="Sprite" parent="Objects/B7-Busines"]
+[node name="Sprite" type="Sprite" parent="Objects/Buildings/B7-Busines"]
 show_behind_parent = true
 position = Vector2( 0, 31.5 )
 texture = ExtResource( 68 )
 offset = Vector2( 0, -173.75 )
 
-[node name="B8-Building" type="Sprite" parent="Objects"]
+[node name="B8-Building" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( 1036, 204 )
 texture = ExtResource( 18 )
 offset = Vector2( 0, -356 )
 
-[node name="B8-Bridge" type="Sprite" parent="Objects/B8-Building"]
+[node name="B8-Bridge" type="Sprite" parent="Objects/Buildings/B8-Building"]
 position = Vector2( 246, -351 )
 texture = ExtResource( 19 )
 offset = Vector2( 0, -73 )
 
-[node name="Shadow" type="Sprite" parent="Objects/B8-Building"]
+[node name="Shadow" type="Sprite" parent="Objects/Buildings/B8-Building"]
 material = SubResource( 61 )
 position = Vector2( 246.5, -91.5 )
 texture = ExtResource( 69 )
 offset = Vector2( 0, -55.5 )
 
-[node name="B9-Church" type="Sprite" parent="Objects"]
+[node name="B9-Church" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( -1171, 797.5 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -599.5 )
 
-[node name="B10-School" type="Sprite" parent="Objects"]
+[node name="B10-School" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( -427.5, 788 )
 texture = ExtResource( 21 )
 offset = Vector2( 0, -248 )
 
-[node name="B11-Bars" type="Sprite" parent="Objects"]
+[node name="B11-Bars" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( 202.5, 788 )
 texture = ExtResource( 22 )
 offset = Vector2( 0, -150 )
 
-[node name="B11-Gab" type="Sprite" parent="Objects"]
+[node name="B11-Gab" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( 437.486, 726 )
 texture = ExtResource( 57 )
 offset = Vector2( 3.33731, -85.5 )
 
-[node name="B12-Building" type="Sprite" parent="Objects"]
+[node name="B12-Building" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( 990, 788 )
 texture = ExtResource( 24 )
 offset = Vector2( 0, -439 )
 
-[node name="B12-Shadow" type="Sprite" parent="Objects/B12-Building"]
+[node name="B12-Shadow" type="Sprite" parent="Objects/Buildings/B12-Building"]
 material = SubResource( 62 )
 position = Vector2( 215.031, -189.434 )
 texture = ExtResource( 56 )
 
-[node name="B12-Bridge" type="Sprite" parent="Objects/B12-Building"]
+[node name="B12-Bridge" type="Sprite" parent="Objects/Buildings/B12-Building"]
 position = Vector2( 216, -73 )
 texture = ExtResource( 23 )
 offset = Vector2( 0, -234 )
@@ -862,26 +864,14 @@ blocks_to_take = [ NodePath("PedestriansRoutes/B1"), NodePath("PedestriansRoutes
 [node name="Pedestrian3" parent="Objects/Characters" instance=ExtResource( 49 )]
 speed = 42.0
 blocks_to_take = [ NodePath("PedestriansRoutes/B1"), NodePath("PedestriansRoutes/B2"), NodePath("PedestriansRoutes/B3"), NodePath("PedestriansRoutes/B4"), NodePath("PedestriansRoutes/B5"), NodePath("PedestriansRoutes/B6"), NodePath("PedestriansRoutes/B7"), NodePath("PedestriansRoutes/B8"), NodePath("PedestriansRoutes/B9"), NodePath("PedestriansRoutes/B10"), NodePath("PedestriansRoutes/B11"), NodePath("PedestriansRoutes/B12") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Pedestrian2" parent="Objects/Characters" instance=ExtResource( 45 )]
 speed = 43.0
 blocks_to_take = [ NodePath("PedestriansRoutes/B1"), NodePath("PedestriansRoutes/B2"), NodePath("PedestriansRoutes/B3"), NodePath("PedestriansRoutes/B4"), NodePath("PedestriansRoutes/B5"), NodePath("PedestriansRoutes/B6"), NodePath("PedestriansRoutes/B7"), NodePath("PedestriansRoutes/B8"), NodePath("PedestriansRoutes/B9"), NodePath("PedestriansRoutes/B10"), NodePath("PedestriansRoutes/B11"), NodePath("PedestriansRoutes/B12") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Pedestrian1" parent="Objects/Characters" instance=ExtResource( 44 )]
 speed = 44.0
 blocks_to_take = [ NodePath("PedestriansRoutes/B1"), NodePath("PedestriansRoutes/B2"), NodePath("PedestriansRoutes/B3"), NodePath("PedestriansRoutes/B4"), NodePath("PedestriansRoutes/B5"), NodePath("PedestriansRoutes/B6"), NodePath("PedestriansRoutes/B7"), NodePath("PedestriansRoutes/B8"), NodePath("PedestriansRoutes/B9"), NodePath("PedestriansRoutes/B10"), NodePath("PedestriansRoutes/B11"), NodePath("PedestriansRoutes/B12") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Pedestrian" parent="Objects/Characters" instance=ExtResource( 43 )]
 speed = 45.0
@@ -901,10 +891,6 @@ blocks_to_take = [ NodePath("../../../PedestriansRoutes/B5"), NodePath("../../..
 speed = 47.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../../PedestriansRoutes/B10"), NodePath("../../../PedestriansRoutes/B11") ]
 blocks_to_take = [ NodePath("../../../PedestriansRoutes/B2"), NodePath("../../../PedestriansRoutes/B3"), NodePath("../../../PedestriansRoutes/B4"), NodePath("../../../PedestriansRoutes/B5"), NodePath("../../../PedestriansRoutes/B6"), NodePath("../../../PedestriansRoutes/B7"), NodePath("../../../PedestriansRoutes/B8"), NodePath("../../../PedestriansRoutes/B9"), NodePath("../../../PedestriansRoutes/B12") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Trolly" parent="Objects/Characters" instance=ExtResource( 39 )]
 speed = 65.0
@@ -931,43 +917,23 @@ blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../
 [node name="Sweeper" parent="Objects/Characters" instance=ExtResource( 36 )]
 speed = 51.0
 target_route_path = NodePath("../../../PedestriansRoutes/Sweeper1")
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Sweeper2" parent="Objects/Characters" instance=ExtResource( 36 )]
 speed = 52.0
 target_route_path = NodePath("../../../PedestriansRoutes/Sweeper2")
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Sweeper3" parent="Objects/Characters" instance=ExtResource( 36 )]
 speed = 53.0
 target_route_path = NodePath("../../../PedestriansRoutes/Sweeper3")
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Sweeper4" parent="Objects/Characters" instance=ExtResource( 36 )]
 speed = 54.0
 target_route_path = NodePath("../../../PedestriansRoutes/Sweeper4")
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Begger" parent="Objects/Characters" instance=ExtResource( 34 )]
 speed = 40.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../../PedestriansRoutes/B4"), NodePath("../../../PedestriansRoutes/B5"), NodePath("../../../PedestriansRoutes/B8"), NodePath("../../../PedestriansRoutes/B9"), NodePath("../../../PedestriansRoutes/B10"), NodePath("../../../PedestriansRoutes/B11"), NodePath("../../../PedestriansRoutes/B12") ]
 blocks_to_take = [ NodePath("../../../PedestriansRoutes/B2"), NodePath("../../../PedestriansRoutes/B3"), NodePath("../../../PedestriansRoutes/B6"), NodePath("../../../PedestriansRoutes/B7") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Seller" parent="Objects/Characters" instance=ExtResource( 33 )]
 speed = 55.0
@@ -977,76 +943,40 @@ blocks_to_take = [ NodePath("../../../PedestriansRoutes/B2"), NodePath("../../..
 [node name="Car_washer" parent="Objects/Characters" instance=ExtResource( 32 )]
 speed = 45.0
 target_route_path = NodePath("../../../PedestriansRoutes/CarGuard")
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Car_washer2" parent="Objects/Characters" instance=ExtResource( 32 )]
 speed = 46.0
 target_route_path = NodePath("../../../PedestriansRoutes/CarGuard2")
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Car_washer3" parent="Objects/Characters" instance=ExtResource( 32 )]
 speed = 49.0
 target_route_path = NodePath("../../../PedestriansRoutes/CarGuard3")
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Car_guard" parent="Objects/Characters" instance=ExtResource( 31 )]
 speed = 48.0
 target_route_path = NodePath("../../../PedestriansRoutes/CarGuard")
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Car_guard2" parent="Objects/Characters" instance=ExtResource( 31 )]
 speed = 45.0
 target_route_path = NodePath("../../../PedestriansRoutes/CarGuard2")
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Car_guard3" parent="Objects/Characters" instance=ExtResource( 31 )]
 speed = 48.0
 target_route_path = NodePath("../../../PedestriansRoutes/CarGuard3")
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Criminal" parent="Objects/Characters" instance=ExtResource( 2 )]
 speed = 63.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Madman" parent="Objects/Characters" instance=ExtResource( 5 )]
 speed = 45.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../../PedestriansRoutes/B2"), NodePath("../../../PedestriansRoutes/B5"), NodePath("../../../PedestriansRoutes/B6"), NodePath("../../../PedestriansRoutes/B9"), NodePath("../../../PedestriansRoutes/B10") ]
 blocks_to_take = [ NodePath("../../../PedestriansRoutes/B3"), NodePath("../../../PedestriansRoutes/B4"), NodePath("../../../PedestriansRoutes/B7"), NodePath("../../../PedestriansRoutes/B8"), NodePath("../../../PedestriansRoutes/B11"), NodePath("../../../PedestriansRoutes/B12") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Madman2" parent="Objects/Characters" instance=ExtResource( 5 )]
 speed = 43.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../../PedestriansRoutes/B2"), NodePath("../../../PedestriansRoutes/B5"), NodePath("../../../PedestriansRoutes/B6"), NodePath("../../../PedestriansRoutes/B9"), NodePath("../../../PedestriansRoutes/B10") ]
 blocks_to_take = [ NodePath("../../../PedestriansRoutes/B3"), NodePath("../../../PedestriansRoutes/B4"), NodePath("../../../PedestriansRoutes/B7"), NodePath("../../../PedestriansRoutes/B8"), NodePath("../../../PedestriansRoutes/B11"), NodePath("../../../PedestriansRoutes/B12") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="StillCharacter" type="YSort" parent="Objects"]
 
@@ -1235,7 +1165,7 @@ texture = ExtResource( 8 )
 offset = Vector2( 2, -84 )
 hframes = 4
 vframes = 4
-frame = 8
+frame = 12
 
 [node name="TrafficLights" type="YSort" parent="Objects"]
 
@@ -1262,12 +1192,11 @@ scale = Vector2( -1, 1 )
 
 [node name="TraficLight_side10" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 474, -671 )
-linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B3-B4") ]
+linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B3-B4"), NodePath("../../../PedestriansRoutes/B4-B3") ]
+linked_lights = [ NodePath("../TraficLight_side11"), NodePath("../TraficLight_side13") ]
 
 [node name="TraficLight_side11" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 470, -405 )
-linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B3-B4") ]
-linked_lights = [ NodePath("../TraficLight_side13") ]
 
 [node name="TraficLight_side12" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 780, -382 )
@@ -1338,7 +1267,7 @@ scale = Vector2( -1, 1 )
 
 [node name="TraficLight_side26" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -921, 498 )
-linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B9-B10") ]
+linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B9-B10"), NodePath("../../../PedestriansRoutes/B10-B9") ]
 linked_lights = [ NodePath("../TraficLight_side28") ]
 
 [node name="TraficLight_side27" parent="Objects/TrafficLights" instance=ExtResource( 25 )]

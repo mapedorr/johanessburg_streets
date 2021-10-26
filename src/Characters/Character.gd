@@ -22,8 +22,10 @@ var character_audio := ''
 var target_point_idx := -1
 var current_route: Path2D = null
 var can_cross := true setget _set_can_cross
+var waiting_position := Vector2.ZERO
 
 var _animation_suffix := ''
+var _last_position := Vector2.ZERO
 
 onready var target_route: Route = get_node_or_null(target_route_path)
 
@@ -82,7 +84,13 @@ func check_flip(have_to_flip: bool) -> void:
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos públicos ░░░░
 func move_to(target_position: Vector2, delay := 0) -> void:
+	_last_position = position
+	
 	yield(get_tree().create_timer(delay), 'timeout')
+	
+	if waiting_position:
+#		position = waiting_position
+		waiting_position = Vector2.ZERO
 	
 	$Tween.interpolate_property(
 		self, 'position',
@@ -91,20 +99,39 @@ func move_to(target_position: Vector2, delay := 0) -> void:
 		Tween.TRANS_LINEAR, Tween.EASE_IN
 	)
 	
-	if position.y < target_position.y:
-		_animation_suffix = '_down'
-		$AnimatedSprite.play('move_down')
-	elif position.y > target_position.y:
-		_animation_suffix = '_up'
-		$AnimatedSprite.play('move_up')
-	else:
-		_animation_suffix = ''
-		$AnimatedSprite.play('move')
+	$AnimatedSprite.play('move' + _animation_suffix)
 	
 	$Tween.start()
 	
 	repositionate()
 	check_flip(position.x < target_position.x)
+
+
+func queue(people: int) -> void:
+	waiting_position = position
+	
+	var next_position := current_route.curve.get_point_position(
+		posmod(target_point_idx + 1, current_route.curve.get_point_count())
+	)
+	
+	if waiting_position.x != next_position.x:
+		position.y += 16 * people
+	if waiting_position.y != next_position.y:
+		position.x += 16 * people
+
+
+func look_towards(future_position: Vector2) -> void:
+	if position.y < future_position.y:
+		_animation_suffix = '_down'
+		$AnimatedSprite.play('idle_down')
+	elif position.y > future_position.y:
+		_animation_suffix = '_up'
+		$AnimatedSprite.play('idle_up')
+	else:
+		_animation_suffix = ''
+		$AnimatedSprite.play('idle')
+	
+	check_flip(position.x < future_position.x)
 
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos privados ░░░░

@@ -12,6 +12,7 @@ var _taxi := preload('res://src/Characters/Taxi/Taxi.tscn')
 # Mapa de rutas y sus puntos
 var _routes_points := {}
 var _routes_join := {}
+var _characters_in_point := {}
 
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos de Godot ░░░░
@@ -87,8 +88,13 @@ func _start() -> void:
 		
 		# Poner al personaje en la ruta y hacerlo caminar
 		character.current_route = route
-		
 		character.position = route.curve.get_point_position(starting_point)
+		character.target_point_idx = starting_point
+		
+		# Que el personaje mire en dirección al punto al que se va a mover
+		character.look_towards(route.curve.get_point_position(
+			posmod(starting_point + 1, route.curve.get_point_count())
+		))
 		
 		# Ver si la nueva ruta tiene un semáforo asociado y verificar
 		# el estado del semáforo
@@ -97,17 +103,22 @@ func _start() -> void:
 			if not tl is TrafficLight:
 				continue
 			
-			if tl.has_route(character.current_route.get_instance_id()) and tl.is_red():
+			if tl.has_route(character.current_route.get_instance_id())\
+			and tl.is_red():
 				tl.add_character(character)
+				
+				# Ver si ya hay un personaje en ese punto para ponerse a hacer cola
+				_check_if_has_to_queue(character)
+				
 				autostart = false
 		
 		if autostart:
 			character.target_point_idx = _get_target_point_in_route(
 				starting_point, route.curve
 			)
-			character.move_to(route.curve.get_point_position(character.target_point_idx))
-		else:
-			character.target_point_idx = starting_point
+			character.move_to(
+				route.curve.get_point_position(character.target_point_idx)
+			)
 		
 		if not character.target_route:
 			(_routes_points[route.name] as Array).remove(starting_point)
@@ -138,12 +149,12 @@ func _select_new_target(character: KinematicBody2D) -> void:
 	# tomarla o a seguir en la que ya iba
 	var target_curve: Curve2D = character.current_route.curve
 	var picked_route := false
+	var position_str := str(character.position)
 	
 	if character.can_change_route:
 		# Cambiar de ruta
-		var character_position_str := str(character.position)
-		if _routes_join.has(character_position_str):
-			var keys: Array = _routes_join[character_position_str].keys()
+		if _routes_join.has(position_str):
+			var keys: Array = _routes_join[position_str].keys()
 			keys.erase(character.current_route.name)
 			
 			# Eliminar de la lista de opciones las rutas que vayan a cuadras
@@ -166,8 +177,14 @@ func _select_new_target(character: KinematicBody2D) -> void:
 				
 				character.current_route = _pedestrians_routes.get_node(keys[0])
 				target_curve = character.current_route.curve
-				character.target_point_idx = _routes_join[character_position_str][keys[0]]
+				character.target_point_idx =\
+				_routes_join[position_str][keys[0]]
 				picked_route = true
+	
+	# Que el personaje mire en dirección al punto al que se va a mover
+	character.look_towards(target_curve.get_point_position(
+		posmod(character.target_point_idx + 1, target_curve.get_point_count())
+	))
 	
 	# Ver si la nueva ruta tiene un semáforo asociado y verificar
 	# el estado del semáforo
@@ -175,8 +192,13 @@ func _select_new_target(character: KinematicBody2D) -> void:
 		if not tl is TrafficLight:
 			continue
 		
-		if tl.has_route(character.current_route.get_instance_id()) and tl.is_red():
+		if tl.has_route(character.current_route.get_instance_id())\
+		and tl.is_red():
 			tl.add_character(character)
+			
+			# Ver si ya hay un personaje en ese punto para ponerse a hacer cola
+			_check_if_has_to_queue(character)
+			
 			return
 	
 	character.target_point_idx = _get_target_point_in_route(
@@ -192,7 +214,9 @@ func _select_new_target(character: KinematicBody2D) -> void:
 		character.target_point_idx = 1
 	# --------------------------------------------------------------------------
 	
-	character.move_to(target_curve.get_point_position(character.target_point_idx))
+	character.move_to(target_curve.get_point_position(
+		character.target_point_idx)
+	)
 
 
 func _change_traffic_lights() -> void:
@@ -204,8 +228,12 @@ func _change_traffic_lights() -> void:
 
 
 func _cross(traffic_light: TrafficLight) -> void:
+	var position_str := ''
+	
 	for c in traffic_light.waiting_characters:
 		var character: Character = c
+		
+		position_str = str(character.waiting_position)
 		
 		character.target_point_idx = _get_target_point_in_route(
 			character.target_point_idx,
@@ -216,7 +244,8 @@ func _cross(traffic_light: TrafficLight) -> void:
 		if character.target_point_idx == 0 and character.restart_on_end:
 			yield(get_tree().create_timer(5.0), 'timeout')
 			
-			character.position = character.current_route.curve.get_point_position(0)
+			character.position =\
+				character.current_route.curve.get_point_position(0)
 			character.target_point_idx = 1
 		# ----------------------------------------------------------------------
 		
@@ -226,7 +255,21 @@ func _cross(traffic_light: TrafficLight) -> void:
 		), randi() % 8)
 	
 	traffic_light.waiting_characters.clear()
+	
+	# Limpiar las listas de personajes esperando en semáforos
+	_characters_in_point.erase(position_str)
 
 
 func _get_target_point_in_route(starting_point: int, route: Curve2D) -> int:
 	return posmod(starting_point + 1, route.get_point_count())
+
+
+func _check_if_has_to_queue(character: Character) -> void:
+	var position_str := str(character.position)
+	if _characters_in_point.has(position_str):
+		character.queue(_characters_in_point[position_str].size())
+		_characters_in_point[position_str].append(
+			character.get_instance_id()
+		)
+	else:
+		_characters_in_point[position_str] = [character.get_instance_id()]

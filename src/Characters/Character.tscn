@@ -4,9 +4,15 @@
 
 [node name="Character" type="KinematicBody2D"]
 script = ExtResource( 1 )
+character_name = ""
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="Tween" type="Tween" parent="."]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
