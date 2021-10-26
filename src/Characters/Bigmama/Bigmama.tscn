@@ -1,154 +1,167 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://src/Characters/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Characters/Bigmama/Bigmama.png" type="Texture" id=2]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
-region = Rect2( 126, 240, 42, 60 )
+region = Rect2( 100, 210, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 42, 60 )
+region = Rect2( 0, 70, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
-region = Rect2( 42, 0, 42, 60 )
+region = Rect2( 100, 140, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 2 )
-region = Rect2( 84, 0, 42, 60 )
+region = Rect2( 150, 140, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 2 )
-region = Rect2( 126, 0, 42, 60 )
+region = Rect2( 200, 140, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 2 )
-region = Rect2( 168, 0, 42, 60 )
+region = Rect2( 250, 140, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 2 )
-region = Rect2( 210, 0, 42, 60 )
+region = Rect2( 300, 140, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 2 )
-region = Rect2( 252, 0, 42, 60 )
+region = Rect2( 350, 140, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 2 )
-region = Rect2( 42, 120, 42, 60 )
+region = Rect2( 0, 210, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 2 )
-region = Rect2( 84, 120, 42, 60 )
+region = Rect2( 50, 210, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 2 )
-region = Rect2( 126, 120, 42, 60 )
+region = Rect2( 0, 0, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 2 )
-region = Rect2( 168, 120, 42, 60 )
+region = Rect2( 50, 0, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 2 )
-region = Rect2( 210, 120, 42, 60 )
+region = Rect2( 100, 0, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 2 )
-region = Rect2( 252, 120, 42, 60 )
+region = Rect2( 150, 0, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=15]
 atlas = ExtResource( 2 )
-region = Rect2( 294, 120, 42, 60 )
+region = Rect2( 200, 0, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=16]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 180, 42, 60 )
+region = Rect2( 250, 0, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 2 )
-region = Rect2( 42, 180, 42, 60 )
+region = Rect2( 300, 0, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=18]
 atlas = ExtResource( 2 )
-region = Rect2( 84, 180, 42, 60 )
+region = Rect2( 350, 0, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=19]
 atlas = ExtResource( 2 )
-region = Rect2( 126, 180, 42, 60 )
+region = Rect2( 150, 210, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 2 )
-region = Rect2( 168, 180, 42, 60 )
+region = Rect2( 200, 210, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 2 )
-region = Rect2( 210, 180, 42, 60 )
+region = Rect2( 250, 210, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=22]
 atlas = ExtResource( 2 )
-region = Rect2( 252, 180, 42, 60 )
+region = Rect2( 300, 210, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=23]
 atlas = ExtResource( 2 )
-region = Rect2( 294, 180, 42, 60 )
+region = Rect2( 350, 210, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=24]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 240, 42, 60 )
+region = Rect2( 0, 280, 50, 70 )
 
 [sub_resource type="AtlasTexture" id=25]
 atlas = ExtResource( 2 )
-region = Rect2( 84, 240, 42, 60 )
+region = Rect2( 50, 280, 50, 70 )
 
-[sub_resource type="SpriteFrames" id=26]
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 2 )
+region = Rect2( 100, 280, 50, 70 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 2 )
+region = Rect2( 150, 280, 50, 70 )
+
+[sub_resource type="SpriteFrames" id=28]
 animations = [ {
 "frames": [ SubResource( 1 ) ],
-"loop": false,
-"name": "idle",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
-"loop": true,
-"name": "move_down",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ) ],
-"loop": true,
-"name": "move_up",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ) ],
-"loop": true,
-"name": "move",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 24 ) ],
 "loop": false,
 "name": "idle_up",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 25 ) ],
+"frames": [ SubResource( 2 ) ],
 "loop": false,
 "name": "idle_down",
 "speed": 5.0
+}, {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "move_up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
+"loop": true,
+"name": "move_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
+"loop": true,
+"name": "move",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 27 ) ],
+"loop": false,
+"name": "idle",
+"speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=27]
+[sub_resource type="CapsuleShape2D" id=29]
 radius = 19.0963
 height = 20.7953
 
 [node name="Bigmama" instance=ExtResource( 1 )]
 input_pickable = true
 character_name = "Bigmama"
+character_description = ""
+character_greeting_sfx = ""
+character_photo = null
+character_audio = ""
 
 [node name="AnimatedSprite" parent="." index="1"]
 position = Vector2( 0, -29.9948 )
-frames = SubResource( 26 )
+frames = SubResource( 28 )
 animation = "idle"
+playing = true
 
 [node name="CollisionShape2D" parent="." index="2"]
 position = Vector2( 0, -29.4697 )
-shape = SubResource( 27 )
+shape = SubResource( 29 )

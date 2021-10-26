@@ -886,10 +886,6 @@ character_audio = ""
 [node name="Pedestrian" parent="Objects/Characters" instance=ExtResource( 43 )]
 speed = 45.0
 blocks_to_take = [ NodePath("PedestriansRoutes/B1"), NodePath("PedestriansRoutes/B2"), NodePath("PedestriansRoutes/B3"), NodePath("PedestriansRoutes/B4"), NodePath("PedestriansRoutes/B5"), NodePath("PedestriansRoutes/B6"), NodePath("PedestriansRoutes/B7"), NodePath("PedestriansRoutes/B8"), NodePath("PedestriansRoutes/B9"), NodePath("PedestriansRoutes/B10"), NodePath("PedestriansRoutes/B11"), NodePath("PedestriansRoutes/B12") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Photographer" parent="Objects/Characters" instance=ExtResource( 47 )]
 speed = 40.0
@@ -900,10 +896,6 @@ character_photo = ExtResource( 53 )
 speed = 45.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../../PedestriansRoutes/B2"), NodePath("../../../PedestriansRoutes/B3"), NodePath("../../../PedestriansRoutes/B4"), NodePath("../../../PedestriansRoutes/B7"), NodePath("../../../PedestriansRoutes/B8"), NodePath("../../../PedestriansRoutes/B11"), NodePath("../../../PedestriansRoutes/B12") ]
 blocks_to_take = [ NodePath("../../../PedestriansRoutes/B5"), NodePath("../../../PedestriansRoutes/B6"), NodePath("../../../PedestriansRoutes/B9"), NodePath("../../../PedestriansRoutes/B10") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Recycler" parent="Objects/Characters" instance=ExtResource( 48 )]
 speed = 47.0
@@ -918,19 +910,11 @@ character_audio = ""
 speed = 65.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../../PedestriansRoutes/B5"), NodePath("../../../PedestriansRoutes/B6"), NodePath("../../../PedestriansRoutes/B7"), NodePath("../../../PedestriansRoutes/B8") ]
 blocks_to_take = [ NodePath("../../../PedestriansRoutes/B2"), NodePath("../../../PedestriansRoutes/B3"), NodePath("../../../PedestriansRoutes/B4"), NodePath("../../../PedestriansRoutes/B9"), NodePath("../../../PedestriansRoutes/B10"), NodePath("../../../PedestriansRoutes/B11"), NodePath("../../../PedestriansRoutes/B12") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Trolly2" parent="Objects/Characters" instance=ExtResource( 39 )]
 speed = 60.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../../PedestriansRoutes/B5"), NodePath("../../../PedestriansRoutes/B6"), NodePath("../../../PedestriansRoutes/B7"), NodePath("../../../PedestriansRoutes/B8") ]
 blocks_to_take = [ NodePath("../../../PedestriansRoutes/B2"), NodePath("../../../PedestriansRoutes/B3"), NodePath("../../../PedestriansRoutes/B4"), NodePath("../../../PedestriansRoutes/B9"), NodePath("../../../PedestriansRoutes/B10"), NodePath("../../../PedestriansRoutes/B11"), NodePath("../../../PedestriansRoutes/B12") ]
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="LadySeller2" parent="Objects/Characters" instance=ExtResource( 38 )]
 speed = 46.0
@@ -1120,20 +1104,12 @@ character_photo = ExtResource( 52 )
 position = Vector2( -93.2034, -545.312 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="HairdresserB3Left" parent="Objects/StillCharacter" instance=ExtResource( 30 )]
 position = Vector2( 203, -468 )
 speed = 0.0
 can_change_route = false
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="HeirdresserB3Right" parent="Objects/StillCharacter" instance=ExtResource( 30 )]
 position = Vector2( 432, -467 )
@@ -1141,20 +1117,12 @@ speed = 0.0
 can_change_route = false
 initial_animation = "idle_down"
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="HeirdresserB5" parent="Objects/StillCharacter" instance=ExtResource( 30 )]
 position = Vector2( 106, 222 )
 speed = 0.0
 can_change_route = false
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="HeirdresserB6" parent="Objects/StillCharacter" instance=ExtResource( 30 )]
 position = Vector2( 60, 536 )
@@ -1162,10 +1130,6 @@ speed = 0.0
 can_change_route = false
 initial_animation = "idle_up"
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="MiliSeller" parent="Objects/StillCharacter" instance=ExtResource( 37 )]
 position = Vector2( -98.8596, -624.863 )
