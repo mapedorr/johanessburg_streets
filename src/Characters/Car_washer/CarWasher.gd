@@ -4,12 +4,13 @@ export var wash_x_offset := 16.0
 export var wash_flip := false
 
 
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos de Godot ░░░░
 func _ready() -> void:
 	$SituationArea.connect('area_entered', self, '_check_if_wash')
 
 
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos privados ░░░░
 func _check_if_wash(area: Area2D) -> void:
-	prints(area.name)
 	if randf() < 0.75:
 		if _moving:
 			$Tween.stop_all()

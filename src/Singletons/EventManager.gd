@@ -3,3 +3,5 @@ extends Node
 
 signal character_clicked(node)
 signal character_popup_closed
+
+enum SellerSide { LEFT, UP, RIGHT, DOWN }

@@ -1,14 +1,17 @@
 extends "res://src/Characters/Character.gd"
 
 
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos de Godot ░░░░
 func _ready() -> void:
 	$Timer.connect('timeout', self, '_check_if_sweep')
 
 
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos públicos ░░░░
 func sweep() -> void:
 	$AnimatedSprite.play('sweep' + _animation_suffix)
 
 
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos privados ░░░░
 func _check_if_sweep() -> void:
 	if randf() > 0.5:
 		if _moving:

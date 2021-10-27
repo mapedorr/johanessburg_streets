@@ -14,11 +14,13 @@ export var target_route_path: NodePath = ''
 export(Array, NodePath) var blocks_to_ignore := []
 export(Array, NodePath) var blocks_to_take := []
 
+# ---- Detalles del personaje --------------------------------------------------
 var character_name := ''
 var character_description := ''
 var character_greeting_sfx := ''
 var character_photo: Texture = null
 var character_audio := ''
+# -------------------------------------------------- Detalles del personaje ----
 var target_point_idx := -1
 var current_route: Path2D = null
 var can_cross := true setget _set_can_cross
@@ -27,6 +29,7 @@ var waiting_position := Vector2.ZERO
 var _animation_suffix := ''
 var _last_position := Vector2.ZERO
 var _moving := false
+var _current_target_position := Vector2.ZERO
 
 onready var target_route: Route = get_node_or_null(target_route_path)
 
@@ -109,6 +112,7 @@ func move_to(target_position: Vector2, delay := 0) -> void:
 	check_flip(position.x < target_position.x)
 	
 	_moving = true
+	_current_target_position = target_position
 
 
 func queue(people: int) -> void:
@@ -139,12 +143,42 @@ func look_towards(future_position: Vector2) -> void:
 	check_flip(position.x < future_position.x)
 
 
+func stop(source_position: Vector2, seller_side: int) -> void:
+	$AnimatedSprite.play('idle')
+	
+	match seller_side:
+		E.SellerSide.LEFT, E.SellerSide.RIGHT:
+			position.y = source_position.y
+			continue
+		E.SellerSide.RIGHT:
+			scale.x = -1
+		E.SellerSide.DOWN, E.SellerSide.UP:
+			position.x = source_position.x
+			continue
+		E.SellerSide.DOWN:
+			$AnimatedSprite.play('idle_down')
+		E.SellerSide.UP:
+			$AnimatedSprite.play('idle_up')
+	
+	if _moving:
+		$Tween.stop_all()
+
+
+func continue_moving() -> void:
+	if _moving:
+		$AnimatedSprite.play('move' + _animation_suffix)
+		$Tween.resume_all()
+		check_flip(position.x < _current_target_position.x)
+
+
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos privados ░░░░
 func _move_finished() -> void:
 	_moving = false
-	$Tween.remove_all()
+	_current_target_position = Vector2.ZERO
 	
+	$Tween.remove_all()
 	$AnimatedSprite.play('idle' + _animation_suffix)
+	
 	emit_signal('point_achieved', self)
 
 
