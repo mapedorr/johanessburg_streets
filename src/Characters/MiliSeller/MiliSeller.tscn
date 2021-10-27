@@ -26,15 +26,15 @@ region = Rect2( 0, 0, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
-region = Rect2( 40, 0, 40, 70 )
+region = Rect2( 0, 140, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 2 )
-region = Rect2( 80, 0, 40, 70 )
+region = Rect2( 0, 70, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 2 )
-region = Rect2( 120, 0, 40, 70 )
+region = Rect2( 40, 70, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 2 )
@@ -111,6 +111,8 @@ can_move = false
 can_change_route = false
 selling_side = 0
 character_name = ""
+character_name = "Mili Seller"
+character_artist = "Mummy Khumalo"
 character_description = "Una de las comidas en el espacio público más populares en Johannesburgo es la mazorca asada llamada miele. Cada vendedor tiene una técnica para asar la mazorca, algunos la ponen con su hoja al calor durante mucho tiempo, dándole una textura suave con sabor a ahumado."
 character_greeting_sfx = ""
 character_photo = null

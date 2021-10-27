@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://src/Characters/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Characters/CowMan/CowMan.png" type="Texture" id=2]
@@ -47,10 +47,50 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 85.3, 33 )
 
-[sub_resource type="RectangleShape2D" id=11]
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 190, 90 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 2 )
+region = Rect2( 190, 0, 190, 90 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 90, 190, 90 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 2 )
+region = Rect2( 190, 90, 190, 90 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 180, 190, 90 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 2 )
+region = Rect2( 190, 180, 190, 90 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 270, 190, 90 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 2 )
+region = Rect2( 190, 270, 190, 90 )
+
+[sub_resource type="SpriteFrames" id=19]
+animations = [ {
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=20]
 extents = Vector2( 10, 1 )
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=21]
 extents = Vector2( 2, 15 )
 
 [node name="CowMan" instance=ExtResource( 1 )]
@@ -60,8 +100,9 @@ can_move = false
 can_change_route = false
 initial_animation = "idle_down"
 selling_side = 1
-character_name = ""
-character_description = ""
+character_name = "CowMan"
+character_artist = "Sharp-Lee Mthimkulu"
+character_description = "El Skopo es una comida que solo consigues en el espacio público, se trata de carne de la cabeza de la vaca que ha sido cocinada por largos periodos de tiempo. Se sirve acompañado de papilla de maíz llamada pap, también se ofrece un vaso de caldo de la cocción de la carne. Tradicionalmente esta comida solo era para hombres."
 character_greeting_sfx = ""
 character_photo = null
 character_audio = ""
@@ -80,12 +121,17 @@ shape = SubResource( 10 )
 
 [node name="Side" type="CollisionShape2D" parent="SituationArea" index="0"]
 position = Vector2( -29, -29 )
-shape = SubResource( 11 )
+shape = SubResource( 20 )
 
 [node name="Down" type="CollisionShape2D" parent="SituationArea" index="1"]
 position = Vector2( 0, 16 )
-shape = SubResource( 12 )
+shape = SubResource( 21 )
 
 [node name="Up" type="CollisionShape2D" parent="SituationArea" index="2"]
 position = Vector2( 0, -46 )
-shape = SubResource( 12 )
+shape = SubResource( 21 )
+
+[node name="PopupAnimatedSprite" parent="." index="3"]
+visible = false
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 19 )

@@ -16,6 +16,7 @@ export(Array, NodePath) var blocks_to_take := []
 
 # ---- Detalles del personaje --------------------------------------------------
 var character_name := ''
+var character_artist := ''
 var character_description := ''
 var character_greeting_sfx := ''
 var character_photo: Texture = null
@@ -53,6 +54,10 @@ func _get_property_list() -> Array:
 	})
 	properties.append({
 		name = "character_name",
+		type = TYPE_STRING
+	})
+	properties.append({
+		name = "character_artist",
 		type = TYPE_STRING
 	})
 	properties.append({
