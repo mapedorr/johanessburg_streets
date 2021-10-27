@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://src/Characters/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Characters/Recycler/Recycler.png" type="Texture" id=2]
@@ -81,11 +81,11 @@ region = Rect2( 100, 400, 100, 100 )
 
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 2 )
-region = Rect2( 400, 200, 100, 100 )
+region = Rect2( 300, 200, 100, 100 )
 
 [sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 2 )
-region = Rect2( 300, 200, 100, 100 )
+region = Rect2( 400, 200, 100, 100 )
 
 [sub_resource type="SpriteFrames" id=22]
 animations = [ {
@@ -111,12 +111,12 @@ animations = [ {
 }, {
 "frames": [ SubResource( 20 ) ],
 "loop": false,
-"name": "idle_up",
+"name": "idle_down",
 "speed": 5.0
 }, {
 "frames": [ SubResource( 21 ) ],
 "loop": false,
-"name": "idle_down",
+"name": "idle_up",
 "speed": 5.0
 } ]
 
@@ -126,14 +126,50 @@ extents = Vector2( 45, 29 )
 [sub_resource type="RectangleShape2D" id=24]
 extents = Vector2( 22, 35 )
 
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 2 )
+region = Rect2( 100, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 2 )
+region = Rect2( 200, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 2 )
+region = Rect2( 300, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 2 )
+region = Rect2( 400, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 2 )
+region = Rect2( 500, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 100, 100, 100 )
+
+[sub_resource type="SpriteFrames" id=32]
+animations = [ {
+"frames": [ SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [node name="Recycler" instance=ExtResource( 1 )]
 input_pickable = true
 character_name = "Recycler"
+character_description = "Los recicladores en sudáfrica normalmente son inmigrantes buscando hacer un diario, se ven obligados muchas veces a rebuscar entre la basura ya que generalmente no se separan los residuos. Para llevar su reciclaje usan un carro esferado al que le colocan un manubrio para poderlo jalar."
 
 [node name="AnimatedSprite" parent="." index="1"]
 frames = SubResource( 22 )
 animation = "idle"
-playing = true
 offset = Vector2( 0, -50 )
 
 [node name="CollisionShape2D" parent="." index="2"]
@@ -144,3 +180,8 @@ shape = SubResource( 23 )
 position = Vector2( 0, -35 )
 shape = SubResource( 24 )
 disabled = true
+
+[node name="PopupAnimatedSprite" parent="." index="4"]
+visible = false
+scale = Vector2( 2, 2 )
+frames = SubResource( 32 )

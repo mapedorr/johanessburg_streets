@@ -16,3 +16,5 @@ character_audio = ""
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="PopupAnimatedSprite" type="AnimatedSprite" parent="."]

@@ -1,99 +1,99 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://src/Characters/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Characters/Taxi/TaxiGreen.png" type="Texture" id=2]
 [ext_resource path="res://src/Characters/Taxi/Taxi.gd" type="Script" id=3]
 
-[sub_resource type="AtlasTexture" id=19]
+[sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 200, 200, 200 )
+region = Rect2( 0, 0, 200, 200 )
 
-[sub_resource type="AtlasTexture" id=20]
-atlas = ExtResource( 2 )
-region = Rect2( 0, 600, 200, 200 )
-
-[sub_resource type="AtlasTexture" id=21]
-atlas = ExtResource( 2 )
-region = Rect2( 0, 200, 200, 200 )
-
-[sub_resource type="AtlasTexture" id=22]
-atlas = ExtResource( 2 )
-region = Rect2( 200, 200, 200, 200 )
-
-[sub_resource type="AtlasTexture" id=23]
-atlas = ExtResource( 2 )
-region = Rect2( 400, 200, 200, 200 )
-
-[sub_resource type="AtlasTexture" id=24]
-atlas = ExtResource( 2 )
-region = Rect2( 600, 200, 200, 200 )
-
-[sub_resource type="AtlasTexture" id=25]
+[sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 600, 200, 200 )
 
-[sub_resource type="AtlasTexture" id=26]
+[sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
 region = Rect2( 200, 600, 200, 200 )
 
-[sub_resource type="AtlasTexture" id=27]
+[sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 2 )
 region = Rect2( 400, 600, 200, 200 )
 
-[sub_resource type="AtlasTexture" id=28]
+[sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 2 )
 region = Rect2( 600, 600, 200, 200 )
 
-[sub_resource type="AtlasTexture" id=29]
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 200, 200, 200 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 200, 200, 200, 200 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 400, 200, 200, 200 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 2 )
+region = Rect2( 600, 200, 200, 200 )
+
+[sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 200, 200 )
 
-[sub_resource type="AtlasTexture" id=30]
+[sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 2 )
 region = Rect2( 200, 0, 200, 200 )
 
-[sub_resource type="AtlasTexture" id=31]
+[sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 2 )
 region = Rect2( 400, 0, 200, 200 )
 
-[sub_resource type="AtlasTexture" id=32]
+[sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 2 )
 region = Rect2( 600, 0, 200, 200 )
 
-[sub_resource type="AtlasTexture" id=33]
+[sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 200, 200 )
+region = Rect2( 0, 600, 200, 200 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 200, 200, 200 )
 
 [sub_resource type="SpriteFrames" id=16]
 animations = [ {
-"frames": [ SubResource( 19 ) ],
-"loop": true,
-"name": "idle_up",
+"frames": [ SubResource( 1 ) ],
+"loop": false,
+"name": "idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 20 ) ],
-"loop": true,
-"name": "idle_down",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ) ],
-"loop": true,
-"name": "move_up",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ) ],
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ],
 "loop": true,
 "name": "move_down",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ) ],
+"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "move_up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
 "loop": true,
 "name": "move",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 33 ) ],
-"loop": false,
-"name": "idle",
+"frames": [ SubResource( 14 ) ],
+"loop": true,
+"name": "idle_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 15 ) ],
+"loop": true,
+"name": "idle_up",
 "speed": 5.0
 } ]
 
@@ -102,6 +102,15 @@ extents = Vector2( 68.329, 62.9986 )
 
 [sub_resource type="RectangleShape2D" id=18]
 extents = Vector2( 44, 84 )
+
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 4, 36 )
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 40, 4 )
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 40, 4 )
 
 [node name="Taxi" instance=ExtResource( 1 )]
 input_pickable = true
@@ -114,7 +123,6 @@ restart_on_end = true
 position = Vector2( 69, -62 )
 frames = SubResource( 16 )
 animation = "idle"
-playing = true
 
 [node name="CollisionShape2D" parent="." index="2"]
 position = Vector2( 68, -62.956 )
@@ -124,3 +132,17 @@ shape = SubResource( 17 )
 position = Vector2( 0, -84 )
 shape = SubResource( 18 )
 disabled = true
+
+[node name="StopArea" type="Area2D" parent="." index="4"]
+
+[node name="SideStop" type="CollisionShape2D" parent="StopArea" index="0"]
+position = Vector2( -9, -41 )
+shape = SubResource( 19 )
+
+[node name="FrontStop" type="CollisionShape2D" parent="StopArea" index="1"]
+position = Vector2( 0, 8 )
+shape = SubResource( 20 )
+
+[node name="BackStop" type="CollisionShape2D" parent="StopArea" index="2"]
+position = Vector2( 0, -176 )
+shape = SubResource( 21 )

@@ -8,7 +8,12 @@ onready var _taxis_group: YSort = find_node('Taxis')
 onready var _traffic_lights_timer: Timer = find_node('TrafficLightsTimer')
 onready var _traffic_lights: YSort = find_node('TrafficLights')
 
-var _taxi := preload('res://src/Characters/Taxi/Taxi.tscn')
+var _taxis := [
+	preload('res://src/Characters/Taxi/TaxiWhite.tscn'),
+	preload('res://src/Characters/Taxi/Taxi.tscn'),
+	preload('res://src/Characters/Taxi/TaxiGreen.tscn'),
+	preload('res://src/Characters/Taxi/TaxiYellow.tscn'),
+]
 # Mapa de rutas y sus puntos
 var _routes_points := {}
 var _routes_join := {}
@@ -128,15 +133,29 @@ func _start() -> void:
 		
 		character.connect('point_achieved', self, '_select_new_target')
 	
-	# Crear un taxi por avenida y ponerlo a andar
-	for avenue in _taxis_routes.get_children():
-		var taxi: Character = _taxi.instance()
+	# Crear X taxis
+	var whites_count := 0
+	for i in range(30):
+		var taxi: Character
+		
+		if whites_count <= 4:
+			taxi = _taxis[0].instance()
+			whites_count = posmod(whites_count + 1, 6)
+		else:
+			taxi = _taxis[randi() % 3 + 1].instance()
+			whites_count = 0
+	
 		_taxis_group.add_child(taxi)
 		
+		var avenue: Path2D = _taxis_routes.get_child(
+			randi() % _taxis_routes.get_child_count()
+		)
 		taxi.current_route = avenue
 		taxi.target_point_idx = 1
 		taxi.position = avenue.curve.get_point_position(0)
-		taxi.move_to(avenue.curve.get_point_position(1))
+		taxi.speed = randi() % 250 + 180
+		taxi.look_towards(avenue.curve.get_point_position(1))
+		taxi.move_to(avenue.curve.get_point_position(1), randi() % 15 + 5)
 		taxi.connect(
 			'point_achieved',
 			self,
@@ -265,6 +284,8 @@ func _get_target_point_in_route(starting_point: int, route: Curve2D) -> int:
 
 
 func _check_if_has_to_queue(character: Character) -> void:
+	if character.is_in_group('Taxis'): return
+	
 	var position_str := str(character.position)
 	if _characters_in_point.has(position_str):
 		character.queue(_characters_in_point[position_str].size())

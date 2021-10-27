@@ -403,6 +403,7 @@ texture = ExtResource( 62 )
 offset = Vector2( -0.303301, -6 )
 
 [node name="PedestriansRoutes" type="Node2D" parent="."]
+visible = false
 position = Vector2( 0, 1 )
 
 [node name="B1" type="Path2D" parent="PedestriansRoutes"]
@@ -626,6 +627,7 @@ script = ExtResource( 27 )
 is_exclusive = true
 
 [node name="TaxisRoutes" type="Node2D" parent="."]
+visible = false
 
 [node name="Avenue1" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.94902, 0.501961, 1, 0.701961 )
@@ -666,7 +668,6 @@ curve = SubResource( 60 )
 [node name="Objects" type="YSort" parent="."]
 
 [node name="Buildings" type="YSort" parent="Objects"]
-visible = false
 
 [node name="B1-Bank" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( -1100.5, -462 )
@@ -1199,7 +1200,7 @@ linked_lights = [ NodePath("../TraficLight_side11"), NodePath("../TraficLight_si
 position = Vector2( 470, -405 )
 
 [node name="TraficLight_side12" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
-position = Vector2( 780, -382 )
+position = Vector2( 802, -382 )
 linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue1") ]
 
 [node name="TraficLight_side13" parent="Objects/TrafficLights" instance=ExtResource( 25 )]

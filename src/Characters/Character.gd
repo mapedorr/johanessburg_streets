@@ -35,6 +35,7 @@ func _ready() -> void:
 	self.connect('input_event', self, '_on_input_event')
 	
 	$AnimatedSprite.play(initial_animation)
+	$PopupAnimatedSprite.hide()
 
 
 func _get_property_list() -> Array:
@@ -136,13 +137,15 @@ func look_towards(future_position: Vector2) -> void:
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos privados ░░░░
 func _move_finished() -> void:
+	$Tween.remove_all()
+	
 	$AnimatedSprite.play('idle' + _animation_suffix)
 	emit_signal('point_achieved', self)
 
 
 func _on_input_event(_viewport, event, _shape_idx):
 	if event is InputEventScreenTouch:
-		if not event.pressed and character_photo:
+		if not event.pressed and character_description:
 			E.emit_signal('character_clicked', self)
 
 
