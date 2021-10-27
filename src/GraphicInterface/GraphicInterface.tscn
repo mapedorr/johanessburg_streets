@@ -1,6 +1,69 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/GraphicInterface/GraphicInterface.gd" type="Script" id=1]
+[ext_resource path="res://src/GraphicInterface/Assets/pop.png" type="Texture" id=2]
+[ext_resource path="res://src/GraphicInterface/Assets/MINECRAFT.TTF" type="DynamicFontData" id=3]
+[ext_resource path="res://src/GraphicInterface/Assets/close.png" type="Texture" id=4]
+[ext_resource path="res://src/Characters/Sangoma/Sangoma.png" type="Texture" id=5]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 200.377, 200.077 )
+margin_left = 4.88889
+margin_right = 4.44444
+margin_top = 60.7778
+margin_bottom = 3.45679
+expand_margin_top = 44.0
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 3 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 26, 70 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 5 )
+region = Rect2( 26, 0, 26, 70 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 5 )
+region = Rect2( 52, 0, 26, 70 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 5 )
+region = Rect2( 78, 0, 26, 70 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 5 )
+region = Rect2( 104, 0, 26, 70 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 5 )
+region = Rect2( 130, 0, 26, 70 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 5 )
+region = Rect2( 156, 0, 26, 70 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 5 )
+region = Rect2( 182, 0, 26, 70 )
+
+[sub_resource type="SpriteFrames" id=12]
+animations = [ {
+"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
+"loop": true,
+"name": "Sangoma",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=13]
+font_data = ExtResource( 3 )
 
 [node name="GraphicInterface" type="CanvasLayer"]
 layer = 100
@@ -16,10 +79,17 @@ __meta__ = {
 
 [node name="CharacterInfo" type="WindowDialog" parent="Control"]
 visible = true
-margin_right = 48.0
-margin_bottom = 40.0
+margin_right = 450.0
+margin_bottom = 356.0
+rect_min_size = Vector2( 450, 356 )
 mouse_filter = 2
-window_title = "Nombre personaje"
+custom_icons/close_highlight = ExtResource( 4 )
+custom_icons/close = ExtResource( 4 )
+custom_styles/panel = SubResource( 1 )
+custom_fonts/title_font = SubResource( 2 )
+custom_constants/close_h_ofs = 40
+custom_constants/close_v_ofs = 40
+custom_constants/title_height = 40
 resizable = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -28,26 +98,72 @@ __meta__ = {
 [node name="MarginContainer" type="MarginContainer" parent="Control/CharacterInfo"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_right = -6.0
+margin_bottom = 11.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/CharacterInfo/MarginContainer"]
-margin_right = 832.0
-margin_bottom = 634.0
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/CharacterInfo/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 434.0
+margin_bottom = 357.0
 
-[node name="Photo" type="TextureRect" parent="Control/CharacterInfo/MarginContainer/VBoxContainer"]
-margin_right = 832.0
-margin_bottom = 315.0
+[node name="Animation" type="Label" parent="Control/CharacterInfo/MarginContainer/HBoxContainer"]
+margin_right = 120.0
+margin_bottom = 347.0
+rect_min_size = Vector2( 120, 0 )
+size_flags_horizontal = 2
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.701961, 0.0784314, 0.0470588, 1 )
+text = "Created by Nkosinathi Nzima
+"
+align = 1
+valign = 2
+autowrap = true
+
+[node name="Sprite" type="AnimatedSprite" parent="Control/CharacterInfo/MarginContainer/HBoxContainer/Animation"]
+position = Vector2( 60, 119.75 )
+scale = Vector2( 3.5, 3.5 )
+frames = SubResource( 12 )
+animation = "Sangoma"
+
+[node name="Text" type="Label" parent="Control/CharacterInfo/MarginContainer/HBoxContainer"]
+margin_left = 124.0
+margin_right = 424.0
+margin_bottom = 347.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 13 )
+custom_colors/font_color = Color( 0.137255, 0.141176, 0.133333, 1 )
+text = "En el espacio público también encontramos a los Sangoma, palabra en Zulú que se refiere a los sanadores que usan medicina tradicional de África. Ellos disponen su mercancía en el suelo; como pieles, hierbas, telas, entre otros elementos y esperan a ser abordados o a sentir la necesidad de sanación de algún transeúnte para llamarlo.
+"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Photo" type="TextureRect" parent="Control/CharacterInfo/MarginContainer/HBoxContainer"]
+visible = false
+margin_left = 124.0
+margin_right = 313.0
+margin_bottom = 181.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 expand = true
 stretch_mode = 6
 
-[node name="Description" type="Label" parent="Control/CharacterInfo/MarginContainer/VBoxContainer"]
-margin_top = 319.0
-margin_right = 832.0
-margin_bottom = 634.0
+[node name="Description" type="Label" parent="Control/CharacterInfo/MarginContainer/HBoxContainer"]
+visible = false
+margin_left = 248.0
+margin_right = 507.0
+margin_bottom = 491.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 autowrap = true

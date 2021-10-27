@@ -26,10 +26,10 @@ func _show_character_info(character: KinematicBody2D) -> void:
 	
 	if character.character_photo:
 		_character_photo.texture = character.character_photo
-		_character_photo.show()
+#		_character_photo.show()
 	
 	if character.character_description:
 		_character_description.text = character.character_description
 		_character_description.show()
 	
-	_character_info.popup_centered(Vector2(800.0, 600.0))
+	_character_info.popup_centered(Vector2(450.0, 356.0))
