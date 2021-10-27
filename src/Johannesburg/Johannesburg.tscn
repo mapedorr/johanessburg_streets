@@ -1,4 +1,4 @@
-[gd_scene load_steps=136 format=2]
+[gd_scene load_steps=138 format=2]
 
 [ext_resource path="res://src/Johannesburg/sprites/FirtsLine/B1_BankBuilding.png" type="Texture" id=1]
 [ext_resource path="res://src/Characters/Criminal/Criminal.tscn" type="PackedScene" id=2]
@@ -311,7 +311,7 @@ _data = {
 
 [sub_resource type="Curve2D" id=48]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -189, -86, 0, 0, 0, 0, 83, -86, 0, 0, 0, 0, 83, 193, 0, 0, 0, 0, -189, 193 )
+"points": PoolVector2Array( 0, 0, 0, 0, -152, -87, 0, 0, 0, 0, 83, -87, 0, 0, 0, 0, 83, 192, 0, 0, 0, 0, -152, 192 )
 }
 
 [sub_resource type="Curve2D" id=49]
@@ -331,12 +331,12 @@ _data = {
 
 [sub_resource type="Curve2D" id=52]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 1485, -325, 0, 0, 0, 0, 845, -325, 0, 0, 0, 0, 163, -325, 0, 0, 0, 0, -1714, -325 )
+"points": PoolVector2Array( 0, 0, 0, 0, 1485, -325, 0, 0, 0, 0, 845, -325, 0, 0, 0, 0, 129, -325, 0, 0, 0, 0, -1714, -325 )
 }
 
 [sub_resource type="Curve2D" id=53]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 1485, -177, 0, 0, 0, 0, 886, -177, 0, 0, 0, 0, 163, -177, 0, 0, 0, 0, -1712, -177 )
+"points": PoolVector2Array( 0, 0, 0, 0, 1485, -177, 0, 0, 0, 0, 845, -177, 0, 0, 0, 0, 129, -177, 0, 0, 0, 0, -1712, -177 )
 }
 
 [sub_resource type="Curve2D" id=54]
@@ -356,7 +356,7 @@ _data = {
 
 [sub_resource type="Curve2D" id=57]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -643, -1006, 0, 0, 0, 0, -643, -449, 0, 0, 0, 0, -643, -348, 0, 0, 0, 0, -729, -64, 0, 0, 0, 0, -729, 170, 0, 0, 0, 0, -729, 1055 )
+"points": PoolVector2Array( 0, 0, 0, 0, -643, -1006, 0, 0, 0, 0, -643, -458, 0, 0, 0, 0, -643, -348, 0, 0, 0, 0, -729, -64, 0, 0, 0, 0, -729, 170, 0, 0, 0, 0, -729, 1055 )
 }
 
 [sub_resource type="Curve2D" id=58]
@@ -380,11 +380,17 @@ blend_mode = 2
 [sub_resource type="CanvasItemMaterial" id=62]
 blend_mode = 2
 
+[sub_resource type="RectangleShape2D" id=63]
+extents = Vector2( 25, 30 )
+
+[sub_resource type="RectangleShape2D" id=64]
+extents = Vector2( 25, 18 )
+
 [node name="Johannesburg" type="Node2D"]
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_horizontal_guides_": [ -764.0, -428.0, -86.0, 193.0, 509.0, 842.0, -177.0, -325.0, 298.0, 430.0, -348.0, -64.0, -458.0, 170.0, 816.0 ],
-"_edit_vertical_guides_": [ -1349.0, -837.0, -540.0, -89.0, 163.0, 459.0, 811.0, 1170.0, -189.0, -611.0, -962.0, -1474.0, 83.0, 874.0, -928.0, -643.0, 1485.0, -729.0, -764.0, 541.0, 631.151, 1305.0, 1216.0, 753.0 ]
+"_edit_vertical_guides_": [ -1349.0, -837.0, -540.0, -89.0, 129.0, 459.0, 811.0, 1170.0, -189.0, -611.0, -962.0, -1474.0, 83.0, 845.0, -928.0, -643.0, 1485.0, -729.0, -764.0, 541.0, 631.151, 1305.0, 1216.0, 753.0, -152.0 ]
 }
 
 [node name="TrafficLightsTimer" type="Timer" parent="."]
@@ -403,7 +409,6 @@ texture = ExtResource( 62 )
 offset = Vector2( -0.303301, -6 )
 
 [node name="PedestriansRoutes" type="Node2D" parent="."]
-visible = false
 position = Vector2( 0, 1 )
 
 [node name="B1" type="Path2D" parent="PedestriansRoutes"]
@@ -948,10 +953,14 @@ target_route_path = NodePath("../../../PedestriansRoutes/CarGuard")
 [node name="Car_washer2" parent="Objects/Characters" instance=ExtResource( 32 )]
 speed = 46.0
 target_route_path = NodePath("../../../PedestriansRoutes/CarGuard2")
+wash_x_offset = -32.0
+wash_flip = true
 
 [node name="Car_washer3" parent="Objects/Characters" instance=ExtResource( 32 )]
 speed = 49.0
 target_route_path = NodePath("../../../PedestriansRoutes/CarGuard3")
+wash_x_offset = -16.0
+wash_flip = true
 
 [node name="Car_guard" parent="Objects/Characters" instance=ExtResource( 31 )]
 speed = 48.0
@@ -1152,6 +1161,14 @@ hframes = 4
 vframes = 4
 frame = 4
 
+[node name="Parked" type="Area2D" parent="Objects/ParkedTaxis/ParkedTaxi1"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/ParkedTaxis/ParkedTaxi1/Parked"]
+position = Vector2( -62, -91 )
+shape = SubResource( 63 )
+
 [node name="ParkedTaxi2" type="Sprite" parent="Objects/ParkedTaxis"]
 position = Vector2( 91, -470 )
 texture = ExtResource( 8 )
@@ -1160,6 +1177,14 @@ hframes = 4
 vframes = 4
 frame = 4
 
+[node name="Parked" type="Area2D" parent="Objects/ParkedTaxis/ParkedTaxi2"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/ParkedTaxis/ParkedTaxi2/Parked"]
+position = Vector2( 62, -44 )
+shape = SubResource( 64 )
+
 [node name="ParkedTaxi3" type="Sprite" parent="Objects/ParkedTaxis"]
 position = Vector2( 811, 142 )
 texture = ExtResource( 8 )
@@ -1167,6 +1192,14 @@ offset = Vector2( 2, -84 )
 hframes = 4
 vframes = 4
 frame = 12
+
+[node name="Parked" type="Area2D" parent="Objects/ParkedTaxis/ParkedTaxi3"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/ParkedTaxis/ParkedTaxi3/Parked"]
+position = Vector2( 62, -66 )
+shape = SubResource( 64 )
 
 [node name="TrafficLights" type="YSort" parent="Objects"]
 

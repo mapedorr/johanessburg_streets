@@ -26,6 +26,7 @@ var waiting_position := Vector2.ZERO
 
 var _animation_suffix := ''
 var _last_position := Vector2.ZERO
+var _moving := false
 
 onready var target_route: Route = get_node_or_null(target_route_path)
 
@@ -106,10 +107,13 @@ func move_to(target_position: Vector2, delay := 0) -> void:
 	
 	repositionate()
 	check_flip(position.x < target_position.x)
+	
+	_moving = true
 
 
 func queue(people: int) -> void:
 	waiting_position = position
+	_moving = false
 	
 	var next_position := current_route.curve.get_point_position(
 		posmod(target_point_idx + 1, current_route.curve.get_point_count())
@@ -137,6 +141,7 @@ func look_towards(future_position: Vector2) -> void:
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos privados ░░░░
 func _move_finished() -> void:
+	_moving = false
 	$Tween.remove_all()
 	
 	$AnimatedSprite.play('idle' + _animation_suffix)

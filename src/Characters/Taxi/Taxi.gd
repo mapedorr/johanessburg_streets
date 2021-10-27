@@ -8,12 +8,12 @@ func _ready() -> void:
 	$StopArea.connect('body_entered', self, '_stop')
 	$StopArea.connect('body_exited', self, '_continue')
 	
-	_disable_stop_collision_shapes()
+	disable_stop_collision_shapes()
 
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos virtuales ░░░░
 func repositionate() -> void:
-	_disable_stop_collision_shapes()
+	disable_stop_collision_shapes()
 	
 	match $AnimatedSprite.animation:
 		'move_up', 'move_down':
@@ -37,17 +37,20 @@ func check_flip(have_to_flip: bool) -> void:
 		.check_flip(have_to_flip)
 
 
-# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos privados ░░░░
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos públicos ░░░░
+func disable_stop_collision_shapes() -> void:
+	for cs in $StopArea.get_children():
+		(cs as CollisionShape2D).disabled = true
+
+
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos privados ░░░░
 func _stop(body: Node) -> void:
 	if body.is_in_group('Taxis'):
+		$AnimatedSprite.play('idle' + _animation_suffix)
 		$Tween.stop_all()
 
 
 func _continue(body: Node) -> void:
 	if body.is_in_group('Taxis'):
+		$AnimatedSprite.play('move' + _animation_suffix)
 		$Tween.resume_all()
-
-
-func _disable_stop_collision_shapes() -> void:
-	for cs in $StopArea.get_children():
-		(cs as CollisionShape2D).disabled = true

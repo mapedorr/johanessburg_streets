@@ -225,16 +225,22 @@ func _select_new_target(character: KinematicBody2D) -> void:
 		target_curve
 	)
 	
+	var delay := 0.0
+	
 	# Los taxis deben reiniciar el recorrido si ya llegaron al final -----------
 	if character.target_point_idx == 0 and character.restart_on_end:
-		yield(get_tree().create_timer(5.0), 'timeout')
+		character.disable_stop_collision_shapes()
+		
+		delay = 5.0
 		
 		character.position = target_curve.get_point_position(0)
 		character.target_point_idx = 1
+		character.look_towards(target_curve.get_point_position(1))
 	# --------------------------------------------------------------------------
 	
-	character.move_to(target_curve.get_point_position(
-		character.target_point_idx)
+	character.move_to(
+		target_curve.get_point_position(character.target_point_idx),
+		delay
 	)
 
 
@@ -260,12 +266,12 @@ func _cross(traffic_light: TrafficLight) -> void:
 		)
 		
 		# Los taxis deben reiniciar el recorrido si ya llegaron al final -------
-		if character.target_point_idx == 0 and character.restart_on_end:
-			yield(get_tree().create_timer(5.0), 'timeout')
-			
-			character.position =\
-				character.current_route.curve.get_point_position(0)
-			character.target_point_idx = 1
+#		if character.target_point_idx == 0 and character.restart_on_end:
+#			yield(get_tree().create_timer(5.0), 'timeout')
+#
+#			character.position =\
+#				character.current_route.curve.get_point_position(0)
+#			character.target_point_idx = 1
 		# ----------------------------------------------------------------------
 		
 		randomize()
