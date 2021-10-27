@@ -13,55 +13,55 @@ region = Rect2( 0, 0, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
-region = Rect2( 40, 0, 40, 70 )
+region = Rect2( 0, 140, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 2 )
-region = Rect2( 80, 0, 40, 70 )
+region = Rect2( 0, 70, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 2 )
-region = Rect2( 120, 0, 40, 70 )
+region = Rect2( 40, 70, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 140, 40, 70 )
+region = Rect2( 80, 70, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 2 )
-region = Rect2( 40, 140, 40, 70 )
+region = Rect2( 120, 70, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 2 )
-region = Rect2( 80, 140, 40, 70 )
+region = Rect2( 0, 0, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 2 )
-region = Rect2( 120, 140, 40, 70 )
+region = Rect2( 40, 0, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 70, 40, 70 )
+region = Rect2( 80, 0, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 2 )
-region = Rect2( 40, 70, 40, 70 )
+region = Rect2( 120, 0, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 2 )
-region = Rect2( 80, 70, 40, 70 )
+region = Rect2( 0, 140, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 2 )
-region = Rect2( 120, 70, 40, 70 )
+region = Rect2( 40, 140, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 40, 70 )
+region = Rect2( 80, 140, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=15]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 140, 40, 70 )
+region = Rect2( 120, 140, 40, 70 )
 
 [sub_resource type="SpriteFrames" id=16]
 animations = [ {
@@ -70,29 +70,29 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ],
-"loop": true,
-"name": "move_down",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
-"loop": true,
-"name": "move_up",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
-"loop": true,
-"name": "move",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 14 ) ],
+"frames": [ SubResource( 2 ) ],
 "loop": false,
 "name": "idle_down",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 15 ) ],
+"frames": [ SubResource( 3 ) ],
 "loop": false,
 "name": "idle_up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "move",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
+"loop": true,
+"name": "move_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ) ],
+"loop": true,
+"name": "move_up",
 "speed": 5.0
 } ]
 
@@ -128,7 +128,8 @@ animations = [ {
 input_pickable = true
 can_move = false
 character_name = "Mili Seller"
-character_description = "La fotografía en las calles de Joburg es un trabajo ambulante que emerge por la inseguridad de sacar tu celular en el espacio público, los fotógrafos permiten al transeúnte tener un recuerdo de ese lugar, embelleciendo las calles, procurando que estén limpias y llamando a que el gobierno pinte las avenidas y coloque palabras colgantes, en este caso HEITA."
+character_artist = "Mummy Khumalo"
+character_description = "Una de las comidas en el espacio público más populares en Johannesburgo es la mazorca asada llamada miele. Cada vendedor tiene una técnica para asar la mazorca, algunos la ponen con su hoja al calor durante mucho tiempo, dándole una textura suave con sabor a ahumado."
 
 [node name="AnimatedSprite" parent="." index="1"]
 position = Vector2( 0, -30 )

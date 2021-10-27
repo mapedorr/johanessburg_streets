@@ -6,6 +6,8 @@ onready var _margin_container: Container =\
 _character_info.find_node('MarginContainer')
 onready var _character_container: PanelContainer =\
 _character_info.find_node('CharacterContainer')
+onready var _character_artist: Label =\
+_character_info.find_node('CharacterArtist')
 onready var _character_description: Label =\
 _character_info.find_node('Description')
 onready var _default_popup_size := _character_info.rect_min_size
@@ -35,13 +37,16 @@ func _show_character_info(character: KinematicBody2D) -> void:
 	AudioMgr.emit_signal('play_requested', 'VX', 'Voice%s' % sound)
 	
 	_character_description.hide()
+	_character_artist.hide()
 	
 	yield(get_tree().create_timer(0.5), 'timeout')
 	
 #	_character_info.window_title = character.character_name
 	
 	if character.character_description:
+		_character_artist.text = character.character_artist
 		_character_description.text = character.character_description
+		_character_artist.show()
 		_character_description.show()
 	
 	var animated_sprite: AnimatedSprite =\
