@@ -13,16 +13,17 @@ _character_info.find_node('Description')
 onready var _default_popup_size := _character_info.rect_min_size
 onready var _default_character_container_size := _character_container.rect_size.x
 
+
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos de Godot ░░░░
 func _ready() -> void:
 	E.connect('character_clicked', self, '_show_character_info')
-	_character_info.connect('popup_hide', E, 'emit_signal', ['character_popup_closed'])
+	_character_info.connect('popup_hide', self, '_popup_closed')
 
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos privados ░░░░
 func _show_character_info(character: KinematicBody2D) -> void:
-	if _character_container.get_child_count() > 0:
-		_character_container.get_child(0).queue_free()
+	for c in _character_container.get_children():
+		c.queue_free()
 	
 	# ---- Devolver las cosas a sus tamaños por defecto ------------------------
 	_character_container.rect_size.x = _default_character_container_size
@@ -67,3 +68,7 @@ func _show_character_info(character: KinematicBody2D) -> void:
 	_character_info.popup_centered(_default_popup_size)
 	_character_info.rect_size = _margin_container.rect_size + (Vector2.ONE * 20.0)
 	animated_sprite.position = _character_container.rect_size / 2
+
+
+func _popup_closed() -> void:
+	E.emit_signal('character_popup_closed')

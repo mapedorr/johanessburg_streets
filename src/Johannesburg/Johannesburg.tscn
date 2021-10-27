@@ -255,141 +255,141 @@ _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -171, 509, 0, 0, 0, 0, -171, 193 )
 }
 
-[sub_resource type="Curve2D" id=65]
+[sub_resource type="Curve2D" id=38]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -171, 509, 0, 0, 0, 0, -50, 509 )
 }
 
-[sub_resource type="Curve2D" id=38]
+[sub_resource type="Curve2D" id=39]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -50, 509, 0, 0, 0, 0, 83, 509, 0, 0, 0, 0, 459, 509, 0, 0, 0, 0, 458.848, 561.295, 0, 0, 0, 0, 486, 561, 0, 0, 0, 0, 486, 741, 0, 0, 0, 0, 459, 741, 0, 0, 0, 0, 459, 842, 0, 0, 0, 0, -50, 842 )
 }
 
-[sub_resource type="Curve2D" id=39]
+[sub_resource type="Curve2D" id=40]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 459, 509, 0, 0, 0, 0, 811, 509 )
 }
 
-[sub_resource type="Curve2D" id=40]
+[sub_resource type="Curve2D" id=41]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 459, 509, 0, 0, 0, 0, 459, 193 )
 }
 
-[sub_resource type="Curve2D" id=66]
+[sub_resource type="Curve2D" id=42]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -171, 842, 0, 0, 0, 0, -50, 842 )
 }
 
-[sub_resource type="Curve2D" id=41]
+[sub_resource type="Curve2D" id=43]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 811, 509, 0, 0, 0, 0, 1170, 509, 0, 0, 0, 0, 1170, 842, 0, 0, 0, 0, 811, 842 )
 }
 
-[sub_resource type="Curve2D" id=42]
+[sub_resource type="Curve2D" id=44]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 459, 842, 0, 0, 0, 0, 811, 842 )
 }
 
-[sub_resource type="Curve2D" id=43]
+[sub_resource type="Curve2D" id=45]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1170, 509, 0, 0, 0, 0, 1170, 193 )
 }
 
-[sub_resource type="Curve2D" id=44]
+[sub_resource type="Curve2D" id=46]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -897, -76, 0, 0, 0, 0, -677, -76, 0, 0, 0, 0, -677, 187, 0, 0, 0, 0, -897, 187 )
 }
 
-[sub_resource type="Curve2D" id=45]
+[sub_resource type="Curve2D" id=47]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -800, -932, 0, 0, 0, 0, -800, -395 )
 }
 
-[sub_resource type="Curve2D" id=46]
+[sub_resource type="Curve2D" id=48]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 35, 225, 0, 0, 0, 0, 35, -91 )
 }
 
-[sub_resource type="Curve2D" id=47]
+[sub_resource type="Curve2D" id=49]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 753, 958, 0, 0, 0, 0, 753, 482 )
 }
 
-[sub_resource type="Curve2D" id=48]
+[sub_resource type="Curve2D" id=50]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -152, -87, 0, 0, 0, 0, 83, -87, 0, 0, 0, 0, 83, 192, 0, 0, 0, 0, -152, 192 )
 }
 
-[sub_resource type="Curve2D" id=49]
+[sub_resource type="Curve2D" id=51]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 163, -428, 0, 0, 0, 0, -69, -428, 0, 0, 0, 0, -69, -661, 0, 0, 0, 0, 163, -661 )
 }
 
-[sub_resource type="Curve2D" id=50]
+[sub_resource type="Curve2D" id=52]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 459, -86, 0, 0, 0, 0, 874, -86, 0, 0, 0, 0, 874, 193, 0, 0, 0, 0, 459, 193 )
 }
 
-[sub_resource type="Curve2D" id=51]
+[sub_resource type="Curve2D" id=53]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -89, -764, 0, 0, 0, 0, 163, -764, 0, 0, 0, 0, 163, -428, 0, 0, 0, 0, -89, -428 )
 }
 
-[sub_resource type="Curve2D" id=52]
+[sub_resource type="Curve2D" id=54]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1485, -325, 0, 0, 0, 0, 845, -325, 0, 0, 0, 0, 129, -325, 0, 0, 0, 0, -1714, -325 )
 }
 
-[sub_resource type="Curve2D" id=53]
+[sub_resource type="Curve2D" id=55]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1485, -177, 0, 0, 0, 0, 845, -177, 0, 0, 0, 0, 129, -177, 0, 0, 0, 0, -1712, -177 )
 }
 
-[sub_resource type="Curve2D" id=54]
+[sub_resource type="Curve2D" id=56]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -1728, 298, 0, 0, 0, 0, -972, 298, 0, 0, 0, 0, -212, 298, 0, 0, 0, 0, 430, 298, 0, 0, 0, 0, 1485, 298 )
 }
 
-[sub_resource type="Curve2D" id=55]
+[sub_resource type="Curve2D" id=57]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1485, 430, 0, 0, 0, 0, 846, 430, 0, 0, 0, 0, 97, 430, 0, 0, 0, 0, -611, 430, 0, 0, 0, 0, -1726, 430 )
 }
 
-[sub_resource type="Curve2D" id=56]
+[sub_resource type="Curve2D" id=58]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -837, 1053, 0, 0, 0, 0, -837, 589, 0, 0, 0, 0, -837, 0, 0, 0, 0, 0, -837, -64, 0, 0, 0, 0, -729, -348, 0, 0, 0, 0, -729, -1005 )
 }
 
-[sub_resource type="Curve2D" id=57]
+[sub_resource type="Curve2D" id=59]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -643, -1006, 0, 0, 0, 0, -643, -458, 0, 0, 0, 0, -643, -348, 0, 0, 0, 0, -729, -64, 0, 0, 0, 0, -729, 170, 0, 0, 0, 0, -729, 1055 )
 }
 
-[sub_resource type="Curve2D" id=58]
+[sub_resource type="Curve2D" id=60]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 541, -1034, 0, 0, 0, 0, 541, -459, 0, 0, 0, 0, 541, 169, 0, 0, 0, 0, 541, 816, 0, 0, 0, 0, 541, 1080 )
 }
 
-[sub_resource type="Curve2D" id=59]
+[sub_resource type="Curve2D" id=61]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 631, -1034, 0, 0, 0, 0, 631, -458, 0, 0, 0, 0, 631, 170, 0, 0, 0, 0, 631, 816, 0, 0, 0, 0, 631, 1080 )
 }
 
-[sub_resource type="Curve2D" id=60]
+[sub_resource type="Curve2D" id=62]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1305, 1079, 0, 0, 0, 0, 1305, 575, 0, 0, 0, 0, 1305, 23, 0, 0, 0, 0, 1305, -1076 )
 }
 
-[sub_resource type="CanvasItemMaterial" id=61]
+[sub_resource type="CanvasItemMaterial" id=63]
 blend_mode = 2
 
-[sub_resource type="CanvasItemMaterial" id=62]
+[sub_resource type="CanvasItemMaterial" id=64]
 blend_mode = 2
 
-[sub_resource type="RectangleShape2D" id=63]
+[sub_resource type="RectangleShape2D" id=65]
 extents = Vector2( 25, 30 )
 
-[sub_resource type="RectangleShape2D" id=64]
+[sub_resource type="RectangleShape2D" id=66]
 extents = Vector2( 25, 18 )
 
 [node name="Johannesburg" type="Node2D"]
@@ -569,82 +569,82 @@ curve = SubResource( 37 )
 script = ExtResource( 27 )
 
 [node name="B10-11" type="Path2D" parent="PedestriansRoutes"]
-curve = SubResource( 65 )
-script = ExtResource( 27 )
-
-[node name="B11" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 38 )
 script = ExtResource( 27 )
 
-[node name="B11-B12" type="Path2D" parent="PedestriansRoutes"]
+[node name="B11" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 39 )
 script = ExtResource( 27 )
 
-[node name="B11-B7" type="Path2D" parent="PedestriansRoutes"]
+[node name="B11-B12" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 40 )
 script = ExtResource( 27 )
 
-[node name="B11-B10" type="Path2D" parent="PedestriansRoutes"]
-curve = SubResource( 66 )
-script = ExtResource( 27 )
-
-[node name="B12" type="Path2D" parent="PedestriansRoutes"]
+[node name="B11-B7" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 41 )
 script = ExtResource( 27 )
 
-[node name="B12-B11" type="Path2D" parent="PedestriansRoutes"]
+[node name="B11-B10" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 42 )
 script = ExtResource( 27 )
 
-[node name="B12-B8" type="Path2D" parent="PedestriansRoutes"]
+[node name="B12" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 43 )
 script = ExtResource( 27 )
 
-[node name="Sweeper1" type="Path2D" parent="PedestriansRoutes"]
-self_modulate = Color( 0.501961, 1, 0.823529, 0.701961 )
+[node name="B12-B11" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 44 )
 script = ExtResource( 27 )
-is_exclusive = true
 
-[node name="Sweeper2" type="Path2D" parent="PedestriansRoutes"]
-self_modulate = Color( 0.501961, 1, 0.823529, 0.701961 )
+[node name="B12-B8" type="Path2D" parent="PedestriansRoutes"]
 curve = SubResource( 45 )
 script = ExtResource( 27 )
-is_exclusive = true
 
-[node name="Sweeper3" type="Path2D" parent="PedestriansRoutes"]
+[node name="Sweeper1" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.823529, 0.701961 )
 curve = SubResource( 46 )
 script = ExtResource( 27 )
 is_exclusive = true
 
-[node name="Sweeper4" type="Path2D" parent="PedestriansRoutes"]
+[node name="Sweeper2" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.823529, 0.701961 )
 curve = SubResource( 47 )
 script = ExtResource( 27 )
 is_exclusive = true
 
-[node name="CarGuard" type="Path2D" parent="PedestriansRoutes"]
-self_modulate = Color( 0.501961, 1, 0.870588, 0.701961 )
+[node name="Sweeper3" type="Path2D" parent="PedestriansRoutes"]
+self_modulate = Color( 0.501961, 1, 0.823529, 0.701961 )
 curve = SubResource( 48 )
 script = ExtResource( 27 )
 is_exclusive = true
 
-[node name="CarGuard2" type="Path2D" parent="PedestriansRoutes"]
-self_modulate = Color( 0.501961, 1, 0.870588, 0.701961 )
+[node name="Sweeper4" type="Path2D" parent="PedestriansRoutes"]
+self_modulate = Color( 0.501961, 1, 0.823529, 0.701961 )
 curve = SubResource( 49 )
 script = ExtResource( 27 )
 is_exclusive = true
 
-[node name="CarGuard3" type="Path2D" parent="PedestriansRoutes"]
+[node name="CarGuard" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.870588, 0.701961 )
 curve = SubResource( 50 )
 script = ExtResource( 27 )
 is_exclusive = true
 
-[node name="Photographer" type="Path2D" parent="PedestriansRoutes"]
+[node name="CarGuard2" type="Path2D" parent="PedestriansRoutes"]
 self_modulate = Color( 0.501961, 1, 0.870588, 0.701961 )
 curve = SubResource( 51 )
+script = ExtResource( 27 )
+is_exclusive = true
+
+[node name="CarGuard3" type="Path2D" parent="PedestriansRoutes"]
+self_modulate = Color( 0.501961, 1, 0.870588, 0.701961 )
+curve = SubResource( 52 )
+script = ExtResource( 27 )
+is_exclusive = true
+
+[node name="Photographer" type="Path2D" parent="PedestriansRoutes"]
+self_modulate = Color( 0.501961, 1, 0.870588, 0.701961 )
+curve = SubResource( 53 )
 script = ExtResource( 27 )
 is_exclusive = true
 
@@ -653,39 +653,39 @@ visible = false
 
 [node name="Avenue1" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.94902, 0.501961, 1, 0.701961 )
-curve = SubResource( 52 )
+curve = SubResource( 54 )
 
 [node name="Avenue2" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.94902, 0.501961, 1, 0.701961 )
-curve = SubResource( 53 )
+curve = SubResource( 55 )
 
 [node name="Avenue3" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.94902, 0.501961, 1, 0.701961 )
-curve = SubResource( 54 )
+curve = SubResource( 56 )
 
 [node name="Avenue4" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.94902, 0.501961, 1, 0.701961 )
-curve = SubResource( 55 )
+curve = SubResource( 57 )
 
 [node name="Street1" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.631373, 1, 0.501961, 0.701961 )
-curve = SubResource( 56 )
+curve = SubResource( 58 )
 
 [node name="Street2" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.631373, 1, 0.501961, 0.701961 )
-curve = SubResource( 57 )
+curve = SubResource( 59 )
 
 [node name="Street4" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.631373, 1, 0.501961, 0.701961 )
-curve = SubResource( 58 )
+curve = SubResource( 60 )
 
 [node name="Street5" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.631373, 1, 0.501961, 0.701961 )
-curve = SubResource( 59 )
+curve = SubResource( 61 )
 
 [node name="Street6" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.631373, 1, 0.501961, 0.701961 )
-curve = SubResource( 60 )
+curve = SubResource( 62 )
 
 [node name="Objects" type="YSort" parent="."]
 
@@ -773,7 +773,7 @@ texture = ExtResource( 19 )
 offset = Vector2( 0, -73 )
 
 [node name="Shadow" type="Sprite" parent="Objects/Buildings/B8-Building"]
-material = SubResource( 61 )
+material = SubResource( 63 )
 position = Vector2( 246.5, -91.5 )
 texture = ExtResource( 69 )
 offset = Vector2( 0, -55.5 )
@@ -804,7 +804,7 @@ texture = ExtResource( 24 )
 offset = Vector2( 0, -439 )
 
 [node name="B12-Shadow" type="Sprite" parent="Objects/Buildings/B12-Building"]
-material = SubResource( 62 )
+material = SubResource( 64 )
 position = Vector2( 215.031, -189.434 )
 texture = ExtResource( 56 )
 
@@ -884,46 +884,25 @@ offset = Vector2( 0, -159.301 )
 [node name="Pedestrian4" parent="Objects/Characters" instance=ExtResource( 42 )]
 blocks_to_take = [ NodePath("PedestriansRoutes/B1"), NodePath("PedestriansRoutes/B2"), NodePath("PedestriansRoutes/B3"), NodePath("PedestriansRoutes/B4"), NodePath("PedestriansRoutes/B5"), NodePath("PedestriansRoutes/B6"), NodePath("PedestriansRoutes/B7"), NodePath("PedestriansRoutes/B8"), NodePath("PedestriansRoutes/B9"), NodePath("PedestriansRoutes/B10"), NodePath("PedestriansRoutes/B11"), NodePath("PedestriansRoutes/B12") ]
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Pedestrian3" parent="Objects/Characters" instance=ExtResource( 49 )]
 speed = 42.0
 blocks_to_take = [ NodePath("PedestriansRoutes/B1"), NodePath("PedestriansRoutes/B2"), NodePath("PedestriansRoutes/B3"), NodePath("PedestriansRoutes/B4"), NodePath("PedestriansRoutes/B5"), NodePath("PedestriansRoutes/B6"), NodePath("PedestriansRoutes/B7"), NodePath("PedestriansRoutes/B8"), NodePath("PedestriansRoutes/B9"), NodePath("PedestriansRoutes/B10"), NodePath("PedestriansRoutes/B11"), NodePath("PedestriansRoutes/B12") ]
-character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Pedestrian2" parent="Objects/Characters" instance=ExtResource( 45 )]
 speed = 43.0
 blocks_to_take = [ NodePath("PedestriansRoutes/B1"), NodePath("PedestriansRoutes/B2"), NodePath("PedestriansRoutes/B3"), NodePath("PedestriansRoutes/B4"), NodePath("PedestriansRoutes/B5"), NodePath("PedestriansRoutes/B6"), NodePath("PedestriansRoutes/B7"), NodePath("PedestriansRoutes/B8"), NodePath("PedestriansRoutes/B9"), NodePath("PedestriansRoutes/B10"), NodePath("PedestriansRoutes/B11"), NodePath("PedestriansRoutes/B12") ]
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Pedestrian1" parent="Objects/Characters" instance=ExtResource( 44 )]
 speed = 44.0
 blocks_to_take = [ NodePath("PedestriansRoutes/B1"), NodePath("PedestriansRoutes/B2"), NodePath("PedestriansRoutes/B3"), NodePath("PedestriansRoutes/B4"), NodePath("PedestriansRoutes/B5"), NodePath("PedestriansRoutes/B6"), NodePath("PedestriansRoutes/B7"), NodePath("PedestriansRoutes/B8"), NodePath("PedestriansRoutes/B9"), NodePath("PedestriansRoutes/B10"), NodePath("PedestriansRoutes/B11"), NodePath("PedestriansRoutes/B12") ]
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Pedestrian" parent="Objects/Characters" instance=ExtResource( 43 )]
 speed = 45.0
 blocks_to_take = [ NodePath("PedestriansRoutes/B1"), NodePath("PedestriansRoutes/B2"), NodePath("PedestriansRoutes/B3"), NodePath("PedestriansRoutes/B4"), NodePath("PedestriansRoutes/B5"), NodePath("PedestriansRoutes/B6"), NodePath("PedestriansRoutes/B7"), NodePath("PedestriansRoutes/B8"), NodePath("PedestriansRoutes/B9"), NodePath("PedestriansRoutes/B10"), NodePath("PedestriansRoutes/B11"), NodePath("PedestriansRoutes/B12") ]
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Photographer" parent="Objects/Characters" instance=ExtResource( 47 )]
 speed = 40.0
@@ -940,11 +919,6 @@ character_name = ""
 speed = 47.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../../PedestriansRoutes/B10"), NodePath("../../../PedestriansRoutes/B11") ]
 blocks_to_take = [ NodePath("../../../PedestriansRoutes/B2"), NodePath("../../../PedestriansRoutes/B3"), NodePath("../../../PedestriansRoutes/B4"), NodePath("../../../PedestriansRoutes/B5"), NodePath("../../../PedestriansRoutes/B6"), NodePath("../../../PedestriansRoutes/B7"), NodePath("../../../PedestriansRoutes/B8"), NodePath("../../../PedestriansRoutes/B9"), NodePath("../../../PedestriansRoutes/B12") ]
-character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Trolly" parent="Objects/Characters" instance=ExtResource( 39 )]
 speed = 65.0
@@ -994,10 +968,6 @@ speed = 40.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../../PedestriansRoutes/B4"), NodePath("../../../PedestriansRoutes/B5"), NodePath("../../../PedestriansRoutes/B8"), NodePath("../../../PedestriansRoutes/B9"), NodePath("../../../PedestriansRoutes/B10"), NodePath("../../../PedestriansRoutes/B11"), NodePath("../../../PedestriansRoutes/B12") ]
 blocks_to_take = [ NodePath("../../../PedestriansRoutes/B2"), NodePath("../../../PedestriansRoutes/B3"), NodePath("../../../PedestriansRoutes/B6"), NodePath("../../../PedestriansRoutes/B7") ]
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Seller" parent="Objects/Characters" instance=ExtResource( 33 )]
 speed = 55.0
@@ -1025,57 +995,34 @@ wash_flip = true
 speed = 48.0
 target_route_path = NodePath("../../../PedestriansRoutes/CarGuard")
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Car_guard2" parent="Objects/Characters" instance=ExtResource( 31 )]
 speed = 45.0
 target_route_path = NodePath("../../../PedestriansRoutes/CarGuard2")
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Car_guard3" parent="Objects/Characters" instance=ExtResource( 31 )]
 speed = 48.0
 target_route_path = NodePath("../../../PedestriansRoutes/CarGuard3")
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Criminal" parent="Objects/Characters" instance=ExtResource( 2 )]
 speed = 63.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1") ]
 character_name = ""
 character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Madman" parent="Objects/Characters" instance=ExtResource( 5 )]
 speed = 45.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../../PedestriansRoutes/B2"), NodePath("../../../PedestriansRoutes/B5"), NodePath("../../../PedestriansRoutes/B6"), NodePath("../../../PedestriansRoutes/B9"), NodePath("../../../PedestriansRoutes/B10") ]
 blocks_to_take = [ NodePath("../../../PedestriansRoutes/B3"), NodePath("../../../PedestriansRoutes/B4"), NodePath("../../../PedestriansRoutes/B7"), NodePath("../../../PedestriansRoutes/B8"), NodePath("../../../PedestriansRoutes/B11"), NodePath("../../../PedestriansRoutes/B12") ]
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="Madman2" parent="Objects/Characters" instance=ExtResource( 5 )]
 speed = 43.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1"), NodePath("../../../PedestriansRoutes/B2"), NodePath("../../../PedestriansRoutes/B5"), NodePath("../../../PedestriansRoutes/B6"), NodePath("../../../PedestriansRoutes/B9"), NodePath("../../../PedestriansRoutes/B10") ]
 blocks_to_take = [ NodePath("../../../PedestriansRoutes/B3"), NodePath("../../../PedestriansRoutes/B4"), NodePath("../../../PedestriansRoutes/B7"), NodePath("../../../PedestriansRoutes/B8"), NodePath("../../../PedestriansRoutes/B11"), NodePath("../../../PedestriansRoutes/B12") ]
 character_name = ""
-character_description = ""
-character_greeting_sfx = ""
-character_photo = null
-character_audio = ""
 
 [node name="StillCharacter" type="YSort" parent="Objects"]
 
@@ -1130,26 +1077,31 @@ position = Vector2( -93.2034, -545.312 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 selling_side = 0
+character_name = "Hairdresser"
 
 [node name="HairdresserB3Left" parent="Objects/StillCharacter" instance=ExtResource( 30 )]
 position = Vector2( 198, -468 )
 speed = 0.0
+character_name = "Hairdresser"
 
 [node name="HeirdresserB3Right" parent="Objects/StillCharacter" instance=ExtResource( 30 )]
 position = Vector2( 432, -451 )
 speed = 0.0
 initial_animation = "idle_down"
 selling_side = 1
+character_name = "Hairdresser"
 
 [node name="HeirdresserB5" parent="Objects/StillCharacter" instance=ExtResource( 30 )]
 position = Vector2( 113, 222 )
 speed = 0.0
+character_name = "Hairdresser"
 
 [node name="HeirdresserB6" parent="Objects/StillCharacter" instance=ExtResource( 30 )]
 position = Vector2( 60, 536 )
 speed = 0.0
 initial_animation = "idle_up"
 selling_side = 3
+character_name = "Hairdresser"
 
 [node name="MiliSeller" parent="Objects/StillCharacter" instance=ExtResource( 37 )]
 position = Vector2( -98, -624 )
@@ -1233,7 +1185,7 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/ParkedTaxis/ParkedTaxi1/Parked"]
 position = Vector2( -62, -91 )
-shape = SubResource( 63 )
+shape = SubResource( 65 )
 
 [node name="ParkedTaxi2" type="Sprite" parent="Objects/ParkedTaxis"]
 position = Vector2( 91, -470 )
@@ -1249,7 +1201,7 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/ParkedTaxis/ParkedTaxi2/Parked"]
 position = Vector2( 62, -44 )
-shape = SubResource( 64 )
+shape = SubResource( 66 )
 
 [node name="ParkedTaxi3" type="Sprite" parent="Objects/ParkedTaxis"]
 position = Vector2( 811, 142 )
@@ -1265,7 +1217,7 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/ParkedTaxis/ParkedTaxi3/Parked"]
 position = Vector2( 62, -66 )
-shape = SubResource( 64 )
+shape = SubResource( 66 )
 
 [node name="TrafficLights" type="YSort" parent="Objects"]
 

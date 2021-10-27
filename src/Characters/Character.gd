@@ -109,6 +109,9 @@ func move_to(target_position: Vector2, delay := 0) -> void:
 		Tween.TRANS_LINEAR, Tween.EASE_IN
 	)
 	
+	if not $AnimatedSprite.frames.has_animation('move' + _animation_suffix):
+		prints('No tengo la animación', name)
+	
 	$AnimatedSprite.play('move' + _animation_suffix)
 	
 	$Tween.start()

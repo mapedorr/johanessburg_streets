@@ -4,104 +4,104 @@
 [ext_resource path="res://src/Characters/MiliSeller/MiliSeller.png" type="Texture" id=2]
 [ext_resource path="res://src/Characters/Seller.gd" type="Script" id=3]
 
-[sub_resource type="AtlasTexture" id=7]
+[sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 70, 40, 70 )
-
-[sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 2 )
-region = Rect2( 40, 70, 40, 70 )
-
-[sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 2 )
-region = Rect2( 80, 70, 40, 70 )
-
-[sub_resource type="AtlasTexture" id=10]
-atlas = ExtResource( 2 )
-region = Rect2( 120, 70, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 40, 70 )
+region = Rect2( 40, 70, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 140, 40, 70 )
+region = Rect2( 80, 70, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 70, 40, 70 )
+region = Rect2( 120, 70, 40, 70 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 2 )
-region = Rect2( 40, 70, 40, 70 )
+region = Rect2( 0, 0, 40, 70 )
 
-[sub_resource type="AtlasTexture" id=11]
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 40, 0, 40, 70 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 80, 0, 40, 70 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 120, 0, 40, 70 )
+
+[sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 140, 40, 70 )
 
-[sub_resource type="AtlasTexture" id=12]
+[sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 2 )
 region = Rect2( 40, 140, 40, 70 )
 
-[sub_resource type="AtlasTexture" id=13]
+[sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 2 )
 region = Rect2( 80, 140, 40, 70 )
 
-[sub_resource type="AtlasTexture" id=14]
+[sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 2 )
 region = Rect2( 120, 140, 40, 70 )
 
-[sub_resource type="SpriteFrames" id=16]
+[sub_resource type="SpriteFrames" id=13]
 animations = [ {
-"frames": [ SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ],
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
 "loop": true,
 "name": "idle_down",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
 "loop": true,
 "name": "idle_up",
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=17]
+[sub_resource type="CapsuleShape2D" id=14]
 radius = 17.875
 height = 27.8499
 
-[sub_resource type="AtlasTexture" id=18]
+[sub_resource type="AtlasTexture" id=15]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 40, 70 )
 
-[sub_resource type="AtlasTexture" id=19]
+[sub_resource type="AtlasTexture" id=16]
 atlas = ExtResource( 2 )
 region = Rect2( 40, 0, 40, 70 )
 
-[sub_resource type="AtlasTexture" id=20]
+[sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 2 )
 region = Rect2( 80, 0, 40, 70 )
 
-[sub_resource type="AtlasTexture" id=21]
+[sub_resource type="AtlasTexture" id=18]
 atlas = ExtResource( 2 )
 region = Rect2( 120, 0, 40, 70 )
 
-[sub_resource type="SpriteFrames" id=22]
+[sub_resource type="SpriteFrames" id=19]
 animations = [ {
-"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
+"frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=23]
+[sub_resource type="RectangleShape2D" id=20]
 extents = Vector2( 10, 1 )
 
-[sub_resource type="RectangleShape2D" id=24]
+[sub_resource type="RectangleShape2D" id=21]
 extents = Vector2( 2, 16 )
 
 [node name="MiliSeller" instance=ExtResource( 1 )]
@@ -110,7 +110,6 @@ script = ExtResource( 3 )
 can_move = false
 can_change_route = false
 selling_side = 0
-character_name = ""
 character_name = "Mili Seller"
 character_artist = "Mummy Khumalo"
 character_description = "Una de las comidas en el espacio público más populares en Johannesburgo es la mazorca asada llamada miele. Cada vendedor tiene una técnica para asar la mazorca, algunos la ponen con su hoja al calor durante mucho tiempo, dándole una textura suave con sabor a ahumado."
@@ -120,30 +119,30 @@ character_audio = ""
 
 [node name="AnimatedSprite" parent="." index="1"]
 position = Vector2( 0, -30 )
-frames = SubResource( 16 )
-animation = "idle"
-frame = 3
+frames = SubResource( 13 )
+animation = "idle_down"
+frame = 2
 
 [node name="CollisionShape2D" parent="." index="2"]
 position = Vector2( 0, -32 )
-shape = SubResource( 17 )
+shape = SubResource( 14 )
 
 [node name="PopupAnimatedSprite" parent="." index="3"]
 scale = Vector2( 3, 3 )
-frames = SubResource( 22 )
+frames = SubResource( 19 )
 
 [node name="SituationArea" type="Area2D" parent="." index="4"]
 
 [node name="Side" type="CollisionShape2D" parent="SituationArea" index="0"]
 position = Vector2( -29, -29 )
-shape = SubResource( 23 )
+shape = SubResource( 20 )
 
 [node name="Down" type="CollisionShape2D" parent="SituationArea" index="1"]
 position = Vector2( 0, 13 )
-shape = SubResource( 24 )
+shape = SubResource( 21 )
 disabled = true
 
 [node name="Up" type="CollisionShape2D" parent="SituationArea" index="2"]
 position = Vector2( 0, -46 )
-shape = SubResource( 24 )
+shape = SubResource( 21 )
 disabled = true
