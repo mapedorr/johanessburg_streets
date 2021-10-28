@@ -137,7 +137,7 @@ _data = {
 
 [sub_resource type="Curve2D" id=14]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 811, -428, 0, 0, 0, 0, 874, -86 )
+"points": PoolVector2Array( 0, 0, 0, 0, 811, -428, 0, 0, 0, 0, 811, -86, 0, 0, 0, 0, 874, -86 )
 }
 
 [sub_resource type="Curve2D" id=15]
@@ -337,47 +337,47 @@ _data = {
 
 [sub_resource type="Curve2D" id=54]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 1485, -325, 0, 0, 0, 0, 845, -325, 0, 0, 0, 0, 129, -325, 0, 0, 0, 0, -1714, -325 )
+"points": PoolVector2Array( 0, 0, 0, 0, 1485, -325, 0, 0, 0, 0, 541, -325, 0, 0, 0, 0, -2320, -325 )
 }
 
 [sub_resource type="Curve2D" id=55]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 1485, -177, 0, 0, 0, 0, 845, -177, 0, 0, 0, 0, 129, -177, 0, 0, 0, 0, -1712, -177 )
+"points": PoolVector2Array( 0, 0, 0, 0, 1485, -177, 0, 0, 0, 0, 631, -177, 0, 0, 0, 0, -2320, -177 )
 }
 
 [sub_resource type="Curve2D" id=56]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -1728, 298, 0, 0, 0, 0, -972, 298, 0, 0, 0, 0, -212, 298, 0, 0, 0, 0, 430, 298, 0, 0, 0, 0, 1485, 298 )
+"points": PoolVector2Array( 0, 0, 0, 0, -1733, 346, 0, 0, 0, 0, 1490, 346 )
 }
 
 [sub_resource type="Curve2D" id=57]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 1485, 430, 0, 0, 0, 0, 846, 430, 0, 0, 0, 0, 97, 430, 0, 0, 0, 0, -611, 430, 0, 0, 0, 0, -1726, 430 )
+"points": PoolVector2Array( 0, 0, 0, 0, 1496, 465, 0, 0, 0, 0, -1739, 465 )
 }
 
 [sub_resource type="Curve2D" id=58]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -837, 1053, 0, 0, 0, 0, -837, 589, 0, 0, 0, 0, -837, 0, 0, 0, 0, 0, -837, -64, 0, 0, 0, 0, -729, -348, 0, 0, 0, 0, -729, -1005 )
+"points": PoolVector2Array( 0, 0, 0, 0, -837, 1053, 0, 0, 0, 0, -837, -64, 0, 0, 0, 0, -748, -348, 0, 0, 0, 0, -748, -1005 )
 }
 
 [sub_resource type="Curve2D" id=59]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -643, -1006, 0, 0, 0, 0, -643, -458, 0, 0, 0, 0, -643, -348, 0, 0, 0, 0, -729, -64, 0, 0, 0, 0, -729, 170, 0, 0, 0, 0, -729, 1055 )
+"points": PoolVector2Array( 0, 0, 0, 0, -643, -1006, 0, 0, 0, 0, -643, -348, 0, 0, 0, 0, -729, -64, 0, 0, 0, 0, -729, 1055 )
 }
 
 [sub_resource type="Curve2D" id=60]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 541, -1034, 0, 0, 0, 0, 541, -459, 0, 0, 0, 0, 541, 169, 0, 0, 0, 0, 541, 816, 0, 0, 0, 0, 541, 1080 )
+"points": PoolVector2Array( 0, 0, 0, 0, 541, -1034, 0, 0, 0, 0, 541, 1080 )
 }
 
 [sub_resource type="Curve2D" id=61]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 631, -1034, 0, 0, 0, 0, 631, -458, 0, 0, 0, 0, 631, 170, 0, 0, 0, 0, 631, 816, 0, 0, 0, 0, 631, 1080 )
+"points": PoolVector2Array( 0, 0, 0, 0, 631, -1034, 0, 0, 0, 0, 631, 1080 )
 }
 
 [sub_resource type="Curve2D" id=62]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 1305, 1079, 0, 0, 0, 0, 1305, 575, 0, 0, 0, 0, 1305, 23, 0, 0, 0, 0, 1305, -1076 )
+"points": PoolVector2Array( 0, 0, 0, 0, 1261, 1080, 0, 0, 0, 0, 1261, -1075 )
 }
 
 [sub_resource type="CanvasItemMaterial" id=63]
@@ -394,10 +394,6 @@ extents = Vector2( 25, 18 )
 
 [node name="Johannesburg" type="Node2D"]
 script = ExtResource( 4 )
-__meta__ = {
-"_edit_horizontal_guides_": [ -764.0, -427.0, -85.0, 194.0, 510.0, 843.0, -177.0, -325.0, 298.0, 430.0, -348.0, -64.0, -458.0, 170.0, 816.0 ],
-"_edit_vertical_guides_": [ -1349.0, -837.0, -540.0, -71.0, 129.0, 459.0, 811.0, 1170.0, -171.0, -611.0, -962.0, -1474.0, 83.0, 845.0, -928.0, -643.0, 1485.0, -729.0, -764.0, 541.0, 631.151, 1305.0, 1216.0, 753.0, -152.0, -50.0 ]
-}
 
 [node name="TrafficLightsTimer" type="Timer" parent="."]
 wait_time = 20.0
@@ -686,6 +682,119 @@ curve = SubResource( 61 )
 [node name="Street6" type="Path2D" parent="TaxisRoutes"]
 self_modulate = Color( 0.631373, 1, 0.501961, 0.701961 )
 curve = SubResource( 62 )
+
+[node name="StopAreas" type="Node2D" parent="."]
+
+[node name="Avenue1" type="Node2D" parent="StopAreas"]
+
+[node name="Avenue1Right" type="Area2D" parent="StopAreas/Avenue1"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Avenue1/Avenue1Right"]
+polygon = PoolVector2Array( 817, -382, 845, -382, 845, -113, 817, -113 )
+
+[node name="Avenue1Middle" type="Area2D" parent="StopAreas/Avenue1"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Avenue1/Avenue1Middle"]
+position = Vector2( -732, 0 )
+polygon = PoolVector2Array( 817, -382, 845, -382, 845, -113, 817, -113 )
+
+[node name="Avenue1Left" type="Area2D" parent="StopAreas/Avenue1"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Avenue1/Avenue1Left"]
+polygon = PoolVector2Array( -540, -382, -515, -382, -604, -113, -632, -113 )
+
+[node name="Avenue2" type="Node2D" parent="StopAreas"]
+
+[node name="Avenue2RLRight" type="Area2D" parent="StopAreas/Avenue2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Avenue2/Avenue2RLRight"]
+position = Vector2( 0, 739 )
+polygon = PoolVector2Array( 817, -382, 845, -382, 845, -267, 817, -267 )
+
+[node name="Avenue2RLMiddle" type="Area2D" parent="StopAreas/Avenue2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Avenue2/Avenue2RLMiddle"]
+position = Vector2( -720, 739 )
+polygon = PoolVector2Array( 817, -382, 845, -382, 845, -267, 817, -267 )
+
+[node name="Avenue2RLLeft" type="Area2D" parent="StopAreas/Avenue2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Avenue2/Avenue2RLLeft"]
+position = Vector2( -1439, 739 )
+polygon = PoolVector2Array( 817, -382, 845, -382, 845, -267, 817, -267 )
+
+[node name="Avenue2LRRight" type="Area2D" parent="StopAreas/Avenue2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Avenue2/Avenue2LRRight"]
+position = Vector2( -403, 630 )
+polygon = PoolVector2Array( 817, -382, 845, -382, 845, -311, 817, -311 )
+
+[node name="Avenue2LRMiddle" type="Area2D" parent="StopAreas/Avenue2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Avenue2/Avenue2LRMiddle"]
+position = Vector2( -943, 629 )
+polygon = PoolVector2Array( 817, -382, 845, -382, 845, -310, 817, -310 )
+
+[node name="Avenue2LRLeft" type="Area2D" parent="StopAreas/Avenue2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Avenue2/Avenue2LRLeft"]
+position = Vector2( -1774, 629 )
+polygon = PoolVector2Array( 817, -382, 845, -382, 845, -310, 817, -310 )
+
+[node name="Street1" type="Node2D" parent="StopAreas"]
+
+[node name="Street1DownTop" type="Area2D" parent="StopAreas/Street1"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Street1/Street1DownTop"]
+position = Vector2( 0, 8 )
+polygon = PoolVector2Array( -586, -457, -694, -457, -694, -427, -586, -427 )
+
+[node name="Street1UpTop" type="Area2D" parent="StopAreas/Street1"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Street1/Street1UpTop"]
+polygon = PoolVector2Array( -900, -105, -900, -46, -790, -46, -790, -105 )
+
+[node name="Street1DownBottom" type="Area2D" parent="StopAreas/Street1"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Street1/Street1DownBottom"]
+polygon = PoolVector2Array( -675, 190, -783, 190, -783, 157, -675, 157 )
+
+[node name="Street1UpBottom" type="Area2D" parent="StopAreas/Street1"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Street1/Street1UpBottom"]
+polygon = PoolVector2Array( -899, 482, -783, 482, -783, 539, -899, 539 )
+
+[node name="Street3" type="Node2D" parent="StopAreas"]
+
+[node name="Street3Top" type="Area2D" parent="StopAreas/Street3"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Street3/Street3Top"]
+polygon = PoolVector2Array( 494, -450, 766, -450, 766, -410, 494, -410 )
+
+[node name="Street3Middle" type="Area2D" parent="StopAreas/Street3"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Street3/Street3Middle"]
+position = Vector2( 0, 633 )
+polygon = PoolVector2Array( 494, -450, 766, -450, 766, -410, 494, -410 )
+
+[node name="Street3Bottom" type="Area2D" parent="StopAreas/Street3"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Street3/Street3Bottom"]
+position = Vector2( 0, 1262 )
+polygon = PoolVector2Array( 494, -450, 766, -450, 766, -410, 494, -410 )
+
+[node name="Street4" type="Node2D" parent="StopAreas"]
+
+[node name="Street4Bottom" type="Area2D" parent="StopAreas/Street4"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Street4/Street4Bottom"]
+polygon = PoolVector2Array( 1215, 483, 1303, 483, 1303, 540, 1215, 540 )
+
+[node name="Street4Middle" type="Area2D" parent="StopAreas/Street4"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StopAreas/Street4/Street4Middle"]
+position = Vector2( 0, -586 )
+polygon = PoolVector2Array( 1215, 483, 1303, 483, 1303, 540, 1215, 540 )
 
 [node name="Objects" type="YSort" parent="."]
 
@@ -1232,7 +1341,8 @@ linked_lights = [ NodePath("../TraficLight_side8") ]
 
 [node name="TraficLight_side9" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 92, -382 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue1") ]
+initial_state = 1
+stop_area_path = NodePath("../../../StopAreas/Avenue1/Avenue1Middle")
 
 [node name="TraficLight_side8" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 114, -673 )
@@ -1248,7 +1358,7 @@ position = Vector2( 470, -405 )
 
 [node name="TraficLight_side12" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 802, -382 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue1") ]
+stop_area_path = NodePath("../../../StopAreas/Avenue1/Avenue1Right")
 
 [node name="TraficLight_side13" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 789, -405 )
@@ -1265,20 +1375,24 @@ scale = Vector2( -1, 1 )
 
 [node name="TraficLight_side16" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -923, 227 )
+initial_state = 1
 linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B5-B6") ]
 linked_lights = [ NodePath("../TraficLight_side18") ]
 
 [node name="TraficLight_side17" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -902, 248 )
 scale = Vector2( -1, 1 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue3") ]
+initial_state = 1
+stop_area_path = NodePath("../../../StopAreas/Avenue2/Avenue2LRLeft")
 
 [node name="TraficLight_side18" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -654, 227 )
 scale = Vector2( -1, 1 )
+initial_state = 1
 
 [node name="TraficLight_side" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -127, 228 )
+initial_state = 1
 linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B6-B7") ]
 linked_lights = [ NodePath("../TraficLight_side4") ]
 
@@ -1288,8 +1402,8 @@ linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B6-B7"), NodePath("
 linked_lights = [ NodePath("../TraficLight_side19") ]
 
 [node name="TraficLight_side20" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
-position = Vector2( 93, -107 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue2") ]
+position = Vector2( -540, -382 )
+stop_area_path = NodePath("../../../StopAreas/Avenue1/Avenue1Left")
 
 [node name="TraficLight_side21" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 473, -85 )
@@ -1297,17 +1411,19 @@ linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B7-B8"), NodePath("
 linked_lights = [ NodePath("../TraficLight_side25") ]
 
 [node name="TraficLight_side22" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
+visible = false
 position = Vector2( 768, -107 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue2") ]
 
 [node name="TraficLight_side23" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 472, 227 )
+initial_state = 1
 linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B7-B8") ]
 linked_lights = [ NodePath("../TraficLight_side24") ]
 
 [node name="TraficLight_side24" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 788, 225 )
 scale = Vector2( -1, 1 )
+initial_state = 1
 
 [node name="TraficLight_side25" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 789, -85 )
@@ -1315,25 +1431,29 @@ scale = Vector2( -1, 1 )
 
 [node name="TraficLight_side26" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -921, 498 )
+initial_state = 1
 linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B9-B10"), NodePath("../../../PedestriansRoutes/B10-B9") ]
 linked_lights = [ NodePath("../TraficLight_side28") ]
 
 [node name="TraficLight_side27" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -644.776, 473.05 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue4") ]
+initial_state = 1
+stop_area_path = NodePath("../../../StopAreas/Avenue2/Avenue2RLLeft")
 
 [node name="TraficLight_side28" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -658.596, 508.314 )
 scale = Vector2( -1, 1 )
+initial_state = 1
 
 [node name="TraficLight_side2" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( -92, 248 )
 scale = Vector2( -1, 1 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue3") ]
+stop_area_path = NodePath("../../../StopAreas/Avenue2/Avenue2LRMiddle")
 
 [node name="TraficLight_side4" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 68, 227 )
 scale = Vector2( -1, 1 )
+initial_state = 1
 
 [node name="TraficLight_side19" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 67, -87 )
@@ -1341,21 +1461,24 @@ scale = Vector2( -1, 1 )
 
 [node name="TraficLight_side29" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 48, 478 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue4") ]
+stop_area_path = NodePath("../../../StopAreas/Avenue2/Avenue2RLMiddle")
 
 [node name="TraficLight_side30" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 472, 500 )
+initial_state = 1
 linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B11-B12") ]
 linked_lights = [ NodePath("../TraficLight_side33") ]
 
 [node name="TraficLight_side34" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 827, 473 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue4") ]
+initial_state = 1
+stop_area_path = NodePath("../../../StopAreas/Avenue2/Avenue2RLRight")
 
 [node name="TraficLight_side35" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 446, 248 )
 scale = Vector2( -1, 1 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Avenue3") ]
+initial_state = 1
+stop_area_path = NodePath("../../../StopAreas/Avenue2/Avenue2LRRight")
 
 [node name="TraficLight_side31" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 473, 858 )
@@ -1369,6 +1492,7 @@ scale = Vector2( -1, 1 )
 [node name="TraficLight_side33" parent="Objects/TrafficLights" instance=ExtResource( 25 )]
 position = Vector2( 787, 500 )
 scale = Vector2( -1, 1 )
+initial_state = 1
 
 [node name="TraficLight_front" parent="Objects/TrafficLights" instance=ExtResource( 26 )]
 position = Vector2( -835, -405 )
@@ -1385,38 +1509,44 @@ linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B3-B7") ]
 
 [node name="TraficLight_front6" parent="Objects/TrafficLights" instance=ExtResource( 26 )]
 position = Vector2( -904, -107 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street1") ]
+stop_area_path = NodePath("../../../StopAreas/Street1/Street1UpTop")
 
 [node name="TraficLight_front10" parent="Objects/TrafficLights" instance=ExtResource( 26 )]
 position = Vector2( -115, 228 )
 linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B10-B6") ]
 
+[node name="TraficLight_front11" parent="Objects/TrafficLights" instance=ExtResource( 26 )]
+position = Vector2( 429, 228 )
+initial_state = 0
+linked_routes_paths = [ NodePath("../../../PedestriansRoutes/B11-B7") ]
+
 [node name="TraficLight_front13" parent="Objects/TrafficLights" instance=ExtResource( 26 )]
 position = Vector2( -901, 478 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street1") ]
+initial_state = 0
+stop_area_path = NodePath("../../../StopAreas/Street1/Street1UpBottom")
 
 [node name="TraficLight_front14" parent="Objects/TrafficLights" instance=ExtResource( 26 )]
 position = Vector2( 1223, 478 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street6") ]
+initial_state = 0
+stop_area_path = NodePath("../../../StopAreas/Street4/Street4Bottom")
 
 [node name="TraficLight_front15" parent="Objects/TrafficLights" instance=ExtResource( 26 )]
 position = Vector2( 1223, -90 )
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street6") ]
+stop_area_path = NodePath("../../../StopAreas/Street4/Street4Middle")
 
 [node name="TraficLight_back" parent="Objects/TrafficLights" instance=ExtResource( 6 )]
 position = Vector2( 493, -382 )
 initial_state = 1
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street4") ]
+stop_area_path = NodePath("../../../StopAreas/Street3/Street3Top")
 
 [node name="TraficLight_back2" parent="Objects/TrafficLights" instance=ExtResource( 6 )]
 position = Vector2( 766, -382 )
 initial_state = 1
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street5") ]
 
 [node name="TraficLight_back3" parent="Objects/TrafficLights" instance=ExtResource( 6 )]
 position = Vector2( -585, -404 )
 initial_state = 1
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street2") ]
+stop_area_path = NodePath("../../../StopAreas/Street1/Street1DownTop")
 
 [node name="TraficLight_back4" parent="Objects/TrafficLights" instance=ExtResource( 6 )]
 position = Vector2( -115, -90 )
@@ -1428,18 +1558,14 @@ initial_state = 1
 
 [node name="TraficLight_back6" parent="Objects/TrafficLights" instance=ExtResource( 6 )]
 position = Vector2( -674, 248 )
-initial_state = 1
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street2") ]
+stop_area_path = NodePath("../../../StopAreas/Street1/Street1DownBottom")
 
 [node name="TraficLight_back7" parent="Objects/TrafficLights" instance=ExtResource( 6 )]
 position = Vector2( 492, 248 )
-initial_state = 1
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street4") ]
+stop_area_path = NodePath("../../../StopAreas/Street3/Street3Middle")
 
 [node name="TraficLight_back8" parent="Objects/TrafficLights" instance=ExtResource( 6 )]
 position = Vector2( 766, 248 )
-initial_state = 1
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street5") ]
 
 [node name="TraficLight_back9" parent="Objects/TrafficLights" instance=ExtResource( 6 )]
 position = Vector2( 67, 497 )
@@ -1448,9 +1574,8 @@ initial_state = 1
 [node name="TraficLight_back10" parent="Objects/TrafficLights" instance=ExtResource( 6 )]
 position = Vector2( 494, 878 )
 initial_state = 1
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street4") ]
+stop_area_path = NodePath("../../../StopAreas/Street3/Street3Bottom")
 
 [node name="TraficLight_back11" parent="Objects/TrafficLights" instance=ExtResource( 6 )]
 position = Vector2( 766, 878 )
 initial_state = 1
-linked_routes_paths = [ NodePath("../../../TaxisRoutes/Street5") ]

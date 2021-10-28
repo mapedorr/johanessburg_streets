@@ -1,6 +1,8 @@
 tool
 extends "res://src/Characters/Character.gd"
 
+var _raycast_checker: Timer = null
+
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos de Godot ░░░░
 func _ready() -> void:
@@ -38,6 +40,32 @@ func check_flip(have_to_flip: bool) -> void:
 		.check_flip(have_to_flip)
 
 
+func enable_raycast() -> void:
+	match $AnimatedSprite.animation:
+		'idle_up':
+			$UpCast.enabled = true
+		'idle_down':
+			$DownCast.enabled = true
+		_:
+			$SideCast.enabled = true
+	
+	_raycast_checker = Timer.new()
+	_raycast_checker.autostart = true
+	_raycast_checker.wait_time = 3.0
+	_raycast_checker.connect('timeout', self, '_check_trancon')
+	
+	add_child(_raycast_checker)
+
+
+func disable_raycast() -> void:
+	$SideCast.enabled = false
+	$UpCast.enabled = false
+	$DownCast.enabled = false
+	
+	_raycast_checker.stop()
+	_raycast_checker.queue_free()
+
+
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos públicos ░░░░
 func disable_stop_collision_shapes() -> void:
 	for cs in $StopArea.get_children():
@@ -55,3 +83,10 @@ func _continue(body: Node) -> void:
 	if body.is_in_group('Taxis'):
 		$AnimatedSprite.play('move' + _animation_suffix)
 		$Tween.resume_all()
+
+
+func _check_trancon() -> void:
+	if not $SideCast.is_colliding():
+		# Si no hay trancón
+		continue_moving()
+		disable_raycast()

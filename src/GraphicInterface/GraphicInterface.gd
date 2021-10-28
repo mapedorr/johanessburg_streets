@@ -48,8 +48,8 @@ func _show_character_info(character: KinematicBody2D) -> void:
 #	_character_info.window_title = character.character_name
 	
 	if character.character_description:
-		_character_artist.text = character.character_artist
-		_character_description.text = "Created by " + character.character_description
+		_character_artist.text = "Created by " + character.character_artist
+		_character_description.text = character.character_description
 		_character_artist.show()
 		_character_description.show()
 	

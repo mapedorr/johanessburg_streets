@@ -9,6 +9,7 @@ enum SellerSide { LEFT, UP, RIGHT, DOWN }
 var clicked := false
 
 
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos privados ░░░░
 func character_clicked(character: Character) -> void:
 	if clicked: return
 	

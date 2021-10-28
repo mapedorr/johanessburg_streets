@@ -167,13 +167,18 @@ func stop(source_position: Vector2, seller_side: int) -> void:
 			$AnimatedSprite.play('idle_down')
 		E.SellerSide.UP:
 			$AnimatedSprite.play('idle_up')
+		_:
+			$AnimatedSprite.play('idle' + _animation_suffix)
 	
 	if _moving:
 		$Tween.stop_all()
 
 
-func continue_moving() -> void:
+func continue_moving(delay := 0) -> void:
 	if _moving:
+		if delay > 0:
+			yield(get_tree().create_timer(delay), 'timeout')
+		
 		$AnimatedSprite.play('move' + _animation_suffix)
 		$Tween.resume_all()
 		check_flip(position.x < _current_target_position.x)

@@ -256,6 +256,11 @@ func _cross(traffic_light: TrafficLight) -> void:
 	var position_str := ''
 	
 	for c in traffic_light.waiting_characters:
+		if c.is_in_group('Taxis'):
+			# Verificar que no haya trancón antes de arrancar.
+			c.enable_raycast()
+			continue
+		
 		var character: Character = c
 		
 		position_str = str(character.waiting_position)
@@ -264,15 +269,6 @@ func _cross(traffic_light: TrafficLight) -> void:
 			character.target_point_idx,
 			character.current_route.curve
 		)
-		
-		# Los taxis deben reiniciar el recorrido si ya llegaron al final -------
-#		if character.target_point_idx == 0 and character.restart_on_end:
-#			yield(get_tree().create_timer(5.0), 'timeout')
-#
-#			character.position =\
-#				character.current_route.curve.get_point_position(0)
-#			character.target_point_idx = 1
-		# ----------------------------------------------------------------------
 		
 		randomize()
 		character.move_to(character.current_route.curve.get_point_position(
