@@ -193,7 +193,7 @@ func _move_finished() -> void:
 func _on_input_event(_viewport, event, _shape_idx):
 	if event is InputEventScreenTouch:
 		if not event.pressed and character_description:
-			E.emit_signal('character_clicked', self)
+			E.character_clicked(self)
 
 
 func _set_can_cross(value: bool) -> void:

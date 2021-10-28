@@ -74,4 +74,5 @@ func _show_character_info(character: KinematicBody2D) -> void:
 
 
 func _popup_closed() -> void:
+	E.clicked = false
 	E.emit_signal('character_popup_closed')
