@@ -12,7 +12,7 @@
 [ext_resource path="res://src/Johannesburg/sprites/FirtsLine/B2_PicknPay_Add.png" type="Texture" id=10]
 [ext_resource path="res://src/Johannesburg/sprites/FirtsLine/B3_Building.png" type="Texture" id=11]
 [ext_resource path="res://src/Johannesburg/sprites/FirtsLine/B4_Abandoned_Flat.png" type="Texture" id=12]
-[ext_resource path="res://src/Johannesburg/sprites/FirtsLine/HEITA.png" type="Texture" id=13]
+[ext_resource path="res://src/Characters/Heita/Heita.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/Johannesburg/sprites/SecondLine/B5_Building.png" type="Texture" id=14]
 [ext_resource path="res://src/Johannesburg/sprites/SecondLine/B6_FairPrice.png" type="Texture" id=15]
 [ext_resource path="res://src/Johannesburg/sprites/SecondLine/B7_Bussines.png" type="Texture" id=16]
@@ -706,15 +706,13 @@ position = Vector2( -225.5, -165 )
 texture = ExtResource( 10 )
 offset = Vector2( 0, -66 )
 
-[node name="HEITA" type="Sprite" parent="Objects/Buildings/B2-PicknPay"]
-position = Vector2( 360.5, -214 )
-texture = ExtResource( 13 )
-offset = Vector2( 0, -34 )
-
 [node name="Publicity" type="Sprite" parent="Objects/Buildings/B2-PicknPay"]
 position = Vector2( 153.5, -141 )
 texture = ExtResource( 70 )
 offset = Vector2( 0, -132 )
+
+[node name="Heita" parent="Objects/Buildings/B2-PicknPay" instance=ExtResource( 13 )]
+position = Vector2( 352, -215.26 )
 
 [node name="B3_Building" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( 308, -472 )
@@ -731,15 +729,15 @@ position = Vector2( -1192.5, 157.5 )
 texture = ExtResource( 14 )
 offset = Vector2( 0, -360 )
 
-[node name="B6-Publicity" type="Sprite" parent="Objects/Buildings"]
-position = Vector2( -614.122, -10.6378 )
-texture = ExtResource( 54 )
-offset = Vector2( 0, -18 )
-
 [node name="B6-Flats" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( -494.5, 157.5 )
 texture = ExtResource( 3 )
 offset = Vector2( 0, -360 )
+
+[node name="B6-Publicity" type="Sprite" parent="Objects/Buildings/B6-Flats"]
+position = Vector2( -119.622, -168.138 )
+texture = ExtResource( 54 )
+offset = Vector2( 0, -18 )
 
 [node name="B6-FairPrice" type="Sprite" parent="Objects/Buildings"]
 position = Vector2( -315, 158 )
@@ -1009,8 +1007,6 @@ character_name = ""
 [node name="Criminal" parent="Objects/Characters" instance=ExtResource( 2 )]
 speed = 63.0
 blocks_to_ignore = [ NodePath("../../../PedestriansRoutes/B1") ]
-character_name = ""
-character_description = ""
 
 [node name="Madman" parent="Objects/Characters" instance=ExtResource( 5 )]
 speed = 45.0

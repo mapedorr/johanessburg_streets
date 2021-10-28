@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HEITA.png-826ed69ec12811d30a25478ab5190d1b.stex"
+path="res://.import/HEITA.png-cb03399a5f94f4d6e860acf7e0ceec93.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Johannesburg/sprites/FirtsLine/HEITA.png"
-dest_files=[ "res://.import/HEITA.png-826ed69ec12811d30a25478ab5190d1b.stex" ]
+source_file="res://src/Characters/Heita/HEITA.png"
+dest_files=[ "res://.import/HEITA.png-cb03399a5f94f4d6e860acf7e0ceec93.stex" ]
 
 [params]
 

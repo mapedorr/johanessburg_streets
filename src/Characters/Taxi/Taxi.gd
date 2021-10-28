@@ -1,3 +1,4 @@
+tool
 extends "res://src/Characters/Character.gd"
 
 

@@ -35,7 +35,10 @@ func _show_character_info(character: KinematicBody2D) -> void:
 	
 	randomize()
 	var sound = randi()% 7+ 1
-	AudioMgr.emit_signal('play_requested', 'VX', 'Voice%s' % sound)
+	if character.is_in_group('Taxis'):
+		AudioMgr.emit_signal('play_requested', 'FX', 'Car%s' % sound)
+	else:
+		AudioMgr.emit_signal('play_requested', 'VX', 'Voice%s' % sound)
 	
 	_character_description.hide()
 	_character_artist.hide()
@@ -46,7 +49,7 @@ func _show_character_info(character: KinematicBody2D) -> void:
 	
 	if character.character_description:
 		_character_artist.text = character.character_artist
-		_character_description.text = character.character_description
+		_character_description.text = "Created by " + character.character_description
 		_character_artist.show()
 		_character_description.show()
 	

@@ -1,8 +1,8 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/AudioManager/AudioManager.gd" type="Script" id=1]
 [ext_resource path="res://src/AudioManager/Audios/AmbientSoundAnimation.ogg" type="AudioStream" id=2]
-[ext_resource path="res://src/AudioManager/Audios/Effect.ogg" type="AudioStream" id=3]
+[ext_resource path="res://src/AudioManager/Audios/TraficSounds/car1.ogg" type="AudioStream" id=3]
 [ext_resource path="res://src/AudioManager/Audios/Greetings/Avuxeni.ogg" type="AudioStream" id=4]
 [ext_resource path="res://src/AudioManager/Audios/Greetings/Dumelang.ogg" type="AudioStream" id=5]
 [ext_resource path="res://src/AudioManager/Audios/Greetings/Dumela.ogg" type="AudioStream" id=6]
@@ -10,6 +10,12 @@
 [ext_resource path="res://src/AudioManager/Audios/Greetings/Sanibonani.ogg" type="AudioStream" id=8]
 [ext_resource path="res://src/AudioManager/Audios/Greetings/Hola.ogg" type="AudioStream" id=9]
 [ext_resource path="res://src/AudioManager/Audios/Greetings/Hello.ogg" type="AudioStream" id=10]
+[ext_resource path="res://src/AudioManager/Audios/TraficSounds/car3.ogg" type="AudioStream" id=11]
+[ext_resource path="res://src/AudioManager/Audios/TraficSounds/car4.ogg" type="AudioStream" id=12]
+[ext_resource path="res://src/AudioManager/Audios/TraficSounds/car2.ogg" type="AudioStream" id=13]
+[ext_resource path="res://src/AudioManager/Audios/TraficSounds/car6.ogg" type="AudioStream" id=14]
+[ext_resource path="res://src/AudioManager/Audios/TraficSounds/car5.ogg" type="AudioStream" id=15]
+[ext_resource path="res://src/AudioManager/Audios/TraficSounds/car7.ogg" type="AudioStream" id=16]
 
 [node name="AudioManager" type="Node2D"]
 script = ExtResource( 1 )
@@ -22,8 +28,33 @@ volume_db = -15.0
 
 [node name="FX" type="Node2D" parent="."]
 
-[node name="Effecto" type="AudioStreamPlayer" parent="FX"]
+[node name="Car1" type="AudioStreamPlayer" parent="FX"]
 stream = ExtResource( 3 )
+volume_db = -25.0
+
+[node name="Car2" type="AudioStreamPlayer" parent="FX"]
+stream = ExtResource( 13 )
+volume_db = -25.0
+
+[node name="Car3" type="AudioStreamPlayer" parent="FX"]
+stream = ExtResource( 11 )
+volume_db = -25.0
+
+[node name="Car4" type="AudioStreamPlayer" parent="FX"]
+stream = ExtResource( 12 )
+volume_db = -25.0
+
+[node name="Car5" type="AudioStreamPlayer" parent="FX"]
+stream = ExtResource( 15 )
+volume_db = -25.0
+
+[node name="Car6" type="AudioStreamPlayer" parent="FX"]
+stream = ExtResource( 14 )
+volume_db = -25.0
+
+[node name="Car7" type="AudioStreamPlayer" parent="FX"]
+stream = ExtResource( 16 )
+volume_db = -25.0
 
 [node name="VX" type="Node2D" parent="."]
 

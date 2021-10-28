@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/car7.ogg-80d3da678b6a2c4cdfe9e8527af077f3.oggstr"
+
+[deps]
+
+source_file="res://src/AudioManager/Audios/TraficSounds/car7.ogg"
+dest_files=[ "res://.import/car7.ogg-80d3da678b6a2c4cdfe9e8527af077f3.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
