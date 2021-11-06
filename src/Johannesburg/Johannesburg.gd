@@ -1,6 +1,8 @@
 extends Node2D
 #warning-ignore-all:return_value_discarded
 
+# Guardar las referencias a los nodos de la escena para usarlos en los cálculos
+# de la lógica del juego.
 onready var _pedestrians_routes: Node2D = find_node('PedestriansRoutes')
 onready var _taxis_routes: Node2D = find_node('TaxisRoutes')
 onready var _characters_group: YSort = find_node('Characters')
@@ -8,6 +10,7 @@ onready var _taxis_group: YSort = find_node('Taxis')
 onready var _traffic_lights_timer: Timer = find_node('TrafficLightsTimer')
 onready var _traffic_lights: YSort = find_node('TrafficLights')
 
+# La referencia a los taxis que se pueden poner a andar por la ciudad.
 var _taxis := [
 	preload('res://src/Characters/Taxi/TaxiWhite.tscn'),
 	preload('res://src/Characters/Taxi/Taxi.tscn'),
@@ -16,30 +19,42 @@ var _taxis := [
 ]
 # Mapa de rutas y sus puntos
 var _routes_points := {}
+# Mapa de uniones de las cuadras
 var _routes_join := {}
+# Se usará para saber si en un punto de semáforo ya hay otro personaje esperando
 var _characters_in_point := {}
 
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos de Godot ░░░░
 func _ready() -> void:
+	# Recorre las rutas de los peatones, y guarda una referencia a los puntos
+	# de cada cuadra.
 	for p in _pedestrians_routes.get_children():
 		if p.is_exclusive:
 			continue
 		
+		# Esto hace que ignore los cruces.
 		if p.name.find('-') > -1:
 			continue
 		
+		# Para cada cuadra (p. ej. B1) guarda un arreglo del 0 al 3.
 		_routes_points[p.name] = range((p as Path2D).curve.get_point_count())
 		
-		# Recorrer los puntos de la ruta para ir creando el diccionario de
-		# conexión de rutas
+		# Recorrer los puntos de la cuadra para ir creando el diccionario de
+		# conexión de cuadras
 		for idx in _routes_points[p.name]:
 			var point_string := str((p as Path2D).curve.get_point_position(idx))
 			
 			if not _routes_join.has(point_string):
+				# Guarda la coordenada de un punto dentro de la cuadra y lo
+				# relaciona con el cruce con el que coincide.
 				_routes_join[point_string] = {}
 				_routes_join[point_string][p.name] = idx
 	
+	# Aquí se guarda la cuadra como una de las posibles rutas a tomar en los
+	# puntos de cruce de la misma cuadra. Esto se hizo para que entre las opciones
+	# de lo que hacen los personajes al llegar a un punto con cruce, estuviera
+	# la de darle la vuelta a la cuadra por donde ya venían caminando.
 	for p in _pedestrians_routes.get_children():
 		if p.is_exclusive:
 			continue
@@ -53,10 +68,12 @@ func _ready() -> void:
 			if _routes_join.has(point_string):
 				_routes_join[point_string][p.name] = point_idx
 	
+	# Aquí nos conectamos a la señal de que cada semáforo cambio de color.
 	for tl in _traffic_lights.get_children():
 		if tl is TrafficLight:
 			(tl as TrafficLight).connect('state_changed', self, '_cross')
 	
+	# Esto es lo que hace que los semáforos cambien de color cada X segundos.
 	_traffic_lights_timer.connect('timeout', self, '_change_traffic_lights')
 	
 	# Que comience la fiesta
@@ -64,6 +81,8 @@ func _ready() -> void:
 
 
 # ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ métodos privados ░░░░
+# Esta función hace que todos los taxis y los personajes se ubiequen en una ruta
+# y empiecen a andar la ciudad.
 func _start() -> void:
 	for c in _characters_group.get_children():
 		var character: Character = c
@@ -77,7 +96,7 @@ func _start() -> void:
 		if character.target_route:
 			route = character.target_route
 		else:
-			# Escoger una ruta al azar para empezar a caminar
+			# Escoger una cuadra al azar para empezar a caminar
 			var routes: Array = _routes_points.keys()
 			
 			for path in character.blocks_to_ignore:
@@ -118,16 +137,25 @@ func _start() -> void:
 				autostart = false
 		
 		if autostart:
+			# Aquí se calcula el índice del punto al que se va a mover el
+			# personaje.
 			character.target_point_idx = _get_target_point_in_route(
 				starting_point, route.curve
 			)
+			# Y aquí, el personaje empieza a caminar hacia la coordenada del punto
+			# al que decidió moverse.
 			character.move_to(
 				route.curve.get_point_position(character.target_point_idx)
 			)
 		
 		if not character.target_route:
+			# Aquí se elimina el punto que escogió el personaje para arrancar de
+			# la lista de posibles puntos donde pueden arrancar los demás
+			# personajes.
 			(_routes_points[route.name] as Array).remove(starting_point)
 			
+			# Si la cuadra se quedó sin puntos, se elimina de la lista de posibles
+			# cuadras a tomar para arrancar.
 			if _routes_points[route.name].empty():
 				_routes_points.erase(route.name)
 		
@@ -135,7 +163,7 @@ func _start() -> void:
 	
 	# Crear X taxis
 	var whites_count := 0
-	for i in range(30):
+	for i in range(10):
 		var taxi: Character
 		
 		if whites_count <= 4:
